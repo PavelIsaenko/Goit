@@ -2,3 +2,22 @@ body {
    font-family: 'Playfair Display', serif;
 }
 
+.menu {
+display: block;
+text-align: center;
+
+}
+
+.menu li {
+   display: inline-block;
+   /* position: absolute; */
+   
+}
+
+.menu li a{
+   text-decoration: none;
+   /* display: inline; */
+   margin: 0 10px;
+   
+   /* left: 35px; */
+}
