@@ -1,0 +1,9 @@
+.text {
+   color: red;
+   /* overflow: auto; */
+   /* font-size: 20px; */
+   height: 750px;
+   width: 1000px;
+  background: url(../img/first-bg.jpg) no-repeat;
+  background-position: center center; 
+}
