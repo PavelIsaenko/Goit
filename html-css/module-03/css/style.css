@@ -21,3 +21,15 @@ text-align: center;
    
    /* left: 35px; */
 }
+
+/* .but {
+   display: flex;
+   justify-content: center;
+   align-content: center;
+} */
+ .button{
+   display: flex;
+  justify-content: center;
+  width: 100px;
+  height:50px;
+ }
