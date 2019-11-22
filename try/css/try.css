@@ -1,9 +1,44 @@
-.text {
+/* the main part of precours */
+
+/* .text {
+   width: 500px;
+}
+
+p {
    color: red;
-   /* overflow: auto; */
-   /* font-size: 20px; */
+   overflow: auto;
+   font-size: 20px;
    height: 750px;
    width: 1000px;
-  background: url(../img/first-bg.jpg) no-repeat;
-  background-position: center center; 
+   background-image: url(../img/first-bg.jpg);
+   background-repeat: no-repeat;
+   background-color: rgb(17, 3, 3);
+   background-position: center center;
+   background: black url(../img/first-bg.jpg) no-repeat center;
+   margin: 100px;
+} */
+
+div {
+  width: 500px;
+  /* height: 60px; */
+  /* margin: 10px; */
+
+}
+.box1, .box2 {
+  background-color: green;
+  
+}
+
+.box1{
+  box-sizing: border-box;
+  margin-bottom: 10px;
+  padding: 80px;
+  border: 5px solid black;
+}
+ 
+.box2{
+  box-sizing: content-box;
+  margin-bottom: 10px;
+  padding: 120px;
+  border: 5px dashed white;
 }
