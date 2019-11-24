@@ -1,3 +1,5 @@
+@import "imported.css";
+
 /* the main part of precours */
 
 /* .text {
@@ -50,3 +52,6 @@ div {
   padding: 120px;
   border: 5px dashed white;
 }
+
+/* Мутоды подключения CSS */
+
