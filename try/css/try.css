@@ -65,3 +65,22 @@ color: brown;
 color: royalblue;
 text-decoration: none;
 }
+/* дочерній селектор */
+.menu .menu__item>a{
+  text-decoration: none;
+  color: turquoise;
+}
+/* сестринский селектор */
+.menu .menu__item>a+ul a{
+color: yellow;
+font-size: 20px;
+/* text-decoration: none; */
+}
+
+div+p {
+  background-color: tomato;
+}
+
+.menu__link>a{
+  text-decoration: none;
+}
