@@ -55,3 +55,13 @@ div {
 
 /* Мутоды подключения CSS */
 
+/* cелекторы */
+/* селктор атрибута [] */
+[type="text"]{
+color: brown;
+}
+
+[href="http://gmail.com"] {
+color: royalblue;
+text-decoration: none;
+}
