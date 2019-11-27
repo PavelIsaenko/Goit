@@ -22,14 +22,20 @@ text-align: center;
    /* left: 35px; */
 }
 
-/* .but {
+/* .button {
    display: flex;
-   justify-content: center;
+   
    align-content: center;
 } */
- .button{
+ /* .button{
    display: flex;
   justify-content: center;
   width: 100px;
   height:50px;
+ } */
+
+ .button {
+    display: block;
+    position: relative;
+    left: 45%;
  }
