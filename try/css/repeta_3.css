@@ -13,3 +13,27 @@ width: 1170px;
 background-color: teal;
 margin: 0 auto;
 }
+
+/* Menu+Logo */
+.page-header {
+  background-color: #3a3e64;
+}
+
+/* site-navigation */
+.site-navigation{
+  font-size: 13px;
+  list-style: none;
+}
+
+.site-navigation li{
+  display: inline-block;
+}
+
+.site-navigation a{
+  color: white;
+  text-decoration: none;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 16px;
+}
+
