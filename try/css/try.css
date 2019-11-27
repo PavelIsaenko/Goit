@@ -70,17 +70,26 @@ text-decoration: none;
   text-decoration: none;
   color: turquoise;
 }
+
+.link {
+  color:red;
+  font-size: 30px;
+}
+
+/* .menu .menu__item ul li a{
+  color: red;
+} */
 /* сестринский селектор */
-.menu .menu__item>a+ul a{
+/* .menu .menu__item>a+ul a{
 color: yellow;
 font-size: 20px;
 /* text-decoration: none; */
-}
-
+/*
+/* 
 div+p {
   background-color: tomato;
 }
 
 .menu__link>a{
   text-decoration: none;
-}
+} */
