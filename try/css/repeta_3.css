@@ -8,6 +8,12 @@ html {
   box-sizing: inherit;
 }
 
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
 .container {
 width: 1170px;
 background-color: teal;
@@ -19,15 +25,39 @@ margin: 0 auto;
   background-color: #3a3e64;
 }
 
+/* Мой вариант, что бы Logo стало c Menu в один ряд */
+/* nav a+ul {
+display: inline-block;
+} */
+
+/*  Делаем Logo блочным елементом, что бы область покрытия занимала всю область логотипа */
+.site-logo {
+  display: inline-block;
+}
+
 /* site-navigation */
 .site-navigation{
+  display: inline-block;
+  margin: 0;
+  padding: 0;
   font-size: 13px;
   list-style: none;
 }
 
 .site-navigation li{
   display: inline-block;
+  /* margin-right: 60px; */
 }
+
+/* Это правило ко всем li кроме последнего */
+.site-navigation li:not(:last-child) {
+  margin-right: 60px;
+}
+
+/* Этоправило только к последнему li */
+/* .site-navigation li:last-child {
+  margin-right: 0;
+} */
 
 .site-navigation a{
   color: white;
