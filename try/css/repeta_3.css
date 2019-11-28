@@ -2,11 +2,14 @@ html {
   box-sizing: border-box;
 }
 
+
 *,
 *::before,
 *::after {
   box-sizing: inherit;
 }
+
+
 
 img {
   display: block;
@@ -25,6 +28,9 @@ margin: 0 auto;
   background-color: #3a3e64;
 }
 
+.page-nav {
+  padding: 37px 0;
+}
 /* Мой вариант, что бы Logo стало c Menu в один ряд */
 /* nav a+ul {
 display: inline-block;
@@ -33,16 +39,21 @@ display: inline-block;
 /*  Делаем Logo блочным елементом, что бы область покрытия занимала всю область логотипа */
 .site-logo {
   display: inline-block;
+  vertical-align: middle;
 }
 
 /* site-navigation */
 .site-navigation{
   display: inline-block;
+  width: 977px;
   margin: 0;
   padding: 0;
   font-size: 13px;
   list-style: none;
+  vertical-align: middle;
+  text-align: right;
 }
+
 
 .site-navigation li{
   display: inline-block;
@@ -66,4 +77,8 @@ display: inline-block;
   text-transform: uppercase;
   line-height: 16px;
 }
+
+
+
+
 
