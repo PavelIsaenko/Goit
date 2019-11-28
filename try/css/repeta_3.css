@@ -45,6 +45,7 @@ display: inline-block;
 /* site-navigation */
 .site-navigation{
   display: inline-block;
+  background-color: teal;
   width: 977px;
   margin: 0;
   padding: 0;
@@ -78,7 +79,10 @@ display: inline-block;
   line-height: 16px;
 }
 
-
+.main-page>p{
+  margin: 0;
+  padding: 0;
+}
 
 
 
