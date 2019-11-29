@@ -1,6 +1,53 @@
+/* Common tools */
+body {
+   color: #ffffff;
+}
 img {
    display: block;
    width: 100%;
    height:auto;
    }
-   
+.container {
+   width: 900px;
+   margin: 0 auto;
+   background-color: rgb(172, 216, 216);
+}
+
+ /* Menu style */
+
+/* .menu {
+   display: block;
+} */
+
+.menu {
+   display: block;
+}
+
+.menu-navigation {
+   text-align: center;
+   vertical-align: middle;
+   padding: 70px 0 100px;
+
+}
+.menu-navigation li {
+   display: inline-block;
+   margin: 0 25px;
+   }
+/* .menu-navigation li:first-child {
+   margin-left: 165px;
+   }
+.menu-navigation li:last-child {
+   margin-right: 100px;
+} */
+
+.menu-navigation a {
+   font-size: 14px;
+   text-decoration: none;
+   text-transform: uppercase;
+   color: #777777;
+}
+
+.menu-navigation li:first-child a {
+   color: blue;
+
+
