@@ -47,7 +47,18 @@ body {
    color: #777777;
 }
 
-.menu-navigation li:first-child a {
+.menu-navigation a:hover,
+.menu-navigation a:focus {
    color: blue;
+}
+
+/* Block section */
+.box {
+    
+}
+.box-item {
+   width: 400px;
+   display: inline-block;
+}
 
 
