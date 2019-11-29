@@ -80,13 +80,10 @@ display: inline-block;
 .site-navigation a:focus {
   color: red;
 }
-
+/* Мой експеримент для задания синего цвета 1-му меню */
 .site-navigation li:first-child a {
   color: blue;
 }
-
-
-
 /* Для лучшего понимания */
 /* .site-navigation a:focus {
   color: blue;
@@ -97,18 +94,40 @@ display: inline-block;
   color: red;
 } */
 
+
 /*features list  */
 .features-list {
   list-style: none;
   margin: 0;
   padding: 0;
+  font-size: 0;
 }
 
 /* Задаем блокам Li размер и размещение в строчно-блочный вид */
 .features-list-item {
 width: 370px;
 display: inline-block;
+text-align: center;
+margin-right: 30px;
 }
+.features-list-item:nth-child(3n){
+  margin-right: 0;
+}
+/* Другой вариант сбросить Margin каждому 3-му Li */
+/* .features-list-item:not(:nth-child(3n)) {
+  margin-right: 30px;
+} */
+
+.features-list-item h3 {
+  color: #2d3033;
+  font-size: 14px;
+  line-height: 17px;
+}
+
+.features-list-item p {
+  font-size: 14px;
+}
+
 
 
 
