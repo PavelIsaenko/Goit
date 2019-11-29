@@ -110,7 +110,7 @@ display: inline-block;
 text-align: center;
 margin-right: 30px;
 }
-.features-list-item:nth-child(3n){
+.features-list-item:nth-child(3n) {
   margin-right: 0;
 }
 /* Другой вариант сбросить Margin каждому 3-му Li */
@@ -121,7 +121,7 @@ margin-right: 30px;
 .features-list-item h3 {
   color: #2d3033;
   font-size: 14px;
-  line-height: 17px;
+  line-height: 1.7;
 }
 
 .features-list-item p {

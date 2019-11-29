@@ -10,20 +10,18 @@ body {
 .container {
    width: 900px;
    margin: 0 auto;
-   background-color: rgb(172, 216, 216);
+   /* background-color: rgb(172, 216, 216); */
 }
 
  /* Menu style */
-
-/* .menu {
-   display: block;
-} */
 
 .menu {
    display: block;
 }
 
 .menu-navigation {
+   /* margin: 0;
+   padding: 0; */
    text-align: center;
    vertical-align: middle;
    padding: 70px 0 80px;
@@ -54,11 +52,55 @@ body {
 
 /* Block section */
 .box {
-    
+   /* display: inline-block; */
+   /* display: block; */
+    margin: 0;
+    padding: 0;
 }
 .box-item {
-   width: 400px;
-   display: inline-block;
+   width: 410px;
+  display: inline-block;
+  padding: 0;
+   margin-bottom: 105px;
+   text-align: left;
 }
+
+/* Придвигаем каждый 2-й блок Li к правой стороне */
+.box-item:nth-child(2n){
+   margin-left: 75px;  
+}
+/* .box:nth-child(2n+1) li{
+   margin-right: 0;
+   
+} */
+ 
+
+.box-item img {
+   width: 410px;
+} 
+/* Text */
+.box-item p, h2, h3 {
+   margin: 30px auto;
+} 
+.box-item h3 {
+   color: #c8c3b9;
+   font-size: 14px;
+   text-transform: uppercase;
+   font-style: Myriad Pro;
+}
+.box-item h2 {
+   color: #626262;
+   font-size: 30px;
+   /* text-transform: uppercase; */
+   font-style: Myriad Pro;
+}
+.box-item p {
+   color: #626262;
+   font-size: 14px;
+   /* text-transform: uppercase; */
+   font-style: Myriad Pro;
+}
+
+
 
 
