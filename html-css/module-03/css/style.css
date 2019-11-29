@@ -2,11 +2,11 @@
 body {
    color: #ffffff;
 }
-img {
+/* img {
    display: block;
    width: 100%;
    height:auto;
-   }
+   } */
 .container {
    width: 900px;
    margin: 0 auto;
@@ -26,7 +26,7 @@ img {
 .menu-navigation {
    text-align: center;
    vertical-align: middle;
-   padding: 70px 0 100px;
+   padding: 70px 0 80px;
 
 }
 .menu-navigation li {
