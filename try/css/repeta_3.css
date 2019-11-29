@@ -97,10 +97,17 @@ display: inline-block;
   color: red;
 } */
 
-
-.main-page>p{
+/*features list  */
+.features-list {
+  list-style: none;
   margin: 0;
   padding: 0;
+}
+
+/* Задаем блокам Li размер и размещение в строчно-блочный вид */
+.features-list-item {
+width: 370px;
+display: inline-block;
 }
 
 
