@@ -1,41 +1,6 @@
-body {
-   font-family: 'Playfair Display', serif;
-}
-
-.menu {
-display: block;
-text-align: center;
-
-}
-
-.menu li {
-   display: inline-block;
-   /* position: absolute; */
+img {
+   display: block;
+   width: 100%;
+   height:auto;
+   }
    
-}
-
-.menu li a{
-   text-decoration: none;
-   /* display: inline; */
-   margin: 0 10px;
-   
-   /* left: 35px; */
-}
-
-/* .button {
-   display: flex;
-   
-   align-content: center;
-} */
- /* .button{
-   display: flex;
-  justify-content: center;
-  width: 100px;
-  height:50px;
- } */
-
- .button {
-    display: block;
-    position: relative;
-    left: 45%;
- }
