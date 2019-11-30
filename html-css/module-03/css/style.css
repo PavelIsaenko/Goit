@@ -43,7 +43,7 @@ body {
    text-decoration: none;
    text-transform: uppercase;
    color: #777777;
-   font-family: Myriad Pro;
+   /* font-family: Myriad Pro; */
 }
 
 .menu-navigation a:hover,
@@ -91,19 +91,19 @@ body {
    color: #c8c3b9;
    font-size: 14px;
    text-transform: uppercase;
-   font-family: "Myriad Pro", Myriad;
+   /* font-family: Myriad Pro; */
 }
 .box-item h2 {
    color: #626262;
    font-size: 30px;
    /* text-transform: uppercase; */
-   font-family: Myriad Pro;
+   /* font-family: Myriad Pro; */
 }
 .box-item p {
    color: #626262;
    font-size: 14px;
    /* text-transform: uppercase; */
-   font-family: Myriad Pro;
+   /* font-family: Myriad Pro; */
 }
 
 /* Стилизуем кнопку */
@@ -119,7 +119,7 @@ button {
    height: 60px;
    font-size: 20px;
    color: #626262;
-   font-family: Myriad Pro;
+   /* font-family: Myriad Pro; */
    background-color: white;
    border: 1px solid #626262;
 }
