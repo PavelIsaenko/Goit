@@ -43,6 +43,7 @@ body {
    text-decoration: none;
    text-transform: uppercase;
    color: #777777;
+   font-family: Myriad Pro;
 }
 
 .menu-navigation a:hover,
@@ -66,13 +67,17 @@ body {
 }
 
 /* Придвигаем каждый 2-й блок Li к правой стороне */
-.box-item:nth-child(2n){
+.box-item:nth-child(2n) {
    margin-left: 75px;  
 }
-/* .box:nth-child(2n+1) li{
-   margin-right: 0;
-   
-} */
+/* Даем всем левым блокам margin 0, что бы не было сдвигов  */
+.box-item:nth-child(2n+1) {
+   margin-right: 0;  
+}
+/* 5-му и 6-му блоку делаем меньше отступ снизу для конпки (Button) */
+.box li:nth-child(n+5) {
+   margin-bottom: 50px; 
+}
  
 
 .box-item img {
@@ -86,20 +91,40 @@ body {
    color: #c8c3b9;
    font-size: 14px;
    text-transform: uppercase;
-   font-style: Myriad Pro;
+   font-family: "Myriad Pro", Myriad;
 }
 .box-item h2 {
    color: #626262;
    font-size: 30px;
    /* text-transform: uppercase; */
-   font-style: Myriad Pro;
+   font-family: Myriad Pro;
 }
 .box-item p {
    color: #626262;
    font-size: 14px;
    /* text-transform: uppercase; */
-   font-style: Myriad Pro;
+   font-family: Myriad Pro;
 }
+
+/* Стилизуем кнопку */
+.button {
+   display: block;
+   text-align: center;
+   background-color: white;
+   margin-bottom: 60px;
+}
+button {
+   display: inline-block;
+   width: 160px;
+   height: 60px;
+   font-size: 20px;
+   color: #626262;
+   font-family: Myriad Pro;
+   background-color: white;
+   border: 1px solid #626262;
+}
+
+
 
 
 
