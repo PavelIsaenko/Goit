@@ -61,8 +61,15 @@ float: left;
 margin-bottom: 30px;
 /* margin-right: 30px; */
  }
+ 
+ /* .gallery a:nth-child(-n+3) {
+    margin-right: 30px;
+ } */
+ /* .gallery a:nth-child(-n+6) {
+   margin-right: 30px;
+} */
 
- .gallery a:nth-child(-n+3) {
+ .gallery a:not(:nth-child(4n)) {
     margin-right: 30px;
  }
  /* .gallery a:not(:last-child) {
