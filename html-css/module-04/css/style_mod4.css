@@ -54,7 +54,21 @@ float: right;
     text-transform: uppercase;
     line-height: 0.786;
  }
- 
+
+ /* Gallery block */
+ .gallery a {
+float: left;
+margin-bottom: 30px;
+/* margin-right: 30px; */
+ }
+
+ .gallery a:nth-child(-n+3) {
+    margin-right: 30px;
+ }
+ /* .gallery a:not(:last-child) {
+   margin-right: 30px;
+ } */
+
 
 
 
