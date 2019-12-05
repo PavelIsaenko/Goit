@@ -1,0 +1,130 @@
+html {
+   box-sizing: border-box;
+ }
+ 
+ 
+ *,
+ *::before,
+ *::after {
+   box-sizing: inherit;
+ }
+ 
+ 
+ 
+ img {
+   display: block;
+   width: 100%;
+   height: auto;
+ }
+ 
+ .container {
+ width: 1170px;
+ background-color: teal;
+ margin: 0 auto;
+ }
+ 
+ /* Menu+Logo */
+ .page-header {
+   background-color: #3a3e64;
+ }
+ 
+ .page-nav {
+   padding: 37px 0;
+ }
+ /* Мой вариант, что бы Logo стало c Menu в один ряд */
+ /* nav a+ul {
+ display: inline-block;
+ } */
+ 
+ /*  Делаем Logo блочным елементом, что бы область покрытия занимала всю область логотипа */
+ .site-logo {
+   display: inline-block;
+   vertical-align: middle;
+ }
+ /* site-navigation */
+ .site-navigation{
+   display: inline-block;
+   width: 977px;
+   margin: 0;
+   padding: 0;
+   font-size: 13px;
+   list-style: none;
+   vertical-align: middle;
+   text-align: right;
+ }
+ .site-navigation li{
+   display: inline-block;
+   /* margin-right: 60px; */
+ }
+ /* Это правило ко всем li кроме последнего, что бы были расстояние между элементами МЕНЮ */
+ .site-navigation li:not(:last-child) {
+   margin-right: 60px;
+ }
+ /* Этоправило только к последнему li */
+ /* .site-navigation li:last-child {
+   margin-right: 0;
+ } */
+ 
+ 
+ 
+ .site-navigation a{
+   color: white;
+   text-decoration: none;
+   font-weight: 700;
+   text-transform: uppercase;
+   line-height: 16px;
+ }
+ 
+ /* Что бы при наведение Menu подсвечивался красным цветом(:hover), а кнопка Tab переключала с красным цветом(:focus) */
+ .site-navigation a:hover,
+ .site-navigation a:focus {
+   color: red;
+ }
+ /* Мой експеримент для задания синего цвета 1-му меню */
+ .site-navigation li:first-child a {
+   color: blue;
+ }
+ /* Для лучшего понимания */
+ /* .site-navigation a:focus {
+   color: blue;
+ } */
+ /* Мой вариант */
+ /* .page-nav a:hover, 
+ .page-nav a:focus {
+   color: red;
+ } */
+ 
+ 
+ /*features list  */
+ .features-list {
+   list-style: none;
+   margin: 0;
+   padding: 0;
+   font-size: 0;
+ }
+ 
+ /* Задаем блокам Li размер и размещение в строчно-блочный вид */
+ .features-list-item {
+ width: 370px;
+ display: inline-block;
+ text-align: center;
+ margin-right: 30px;
+ }
+ .features-list-item:nth-child(3n) {
+   margin-right: 0;
+ }
+ /* Другой вариант сбросить Margin каждому 3-му Li */
+ /* .features-list-item:not(:nth-child(3n)) {
+   margin-right: 30px;
+ } */
+ 
+ .features-list-item h3 {
+   color: #2d3033;
+   font-size: 14px;
+   line-height: 1.7;
+ }
+ 
+ .features-list-item p {
+   font-size: 14px;
+ }
+ 
