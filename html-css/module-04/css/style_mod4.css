@@ -1,7 +1,7 @@
-/* body {
+body {
    background-color: rgb(236, 236, 139);
-} */
-.clearfix {
+}
+.clearfix::after {
    content: '';
    display: table;
    clear: both;
@@ -99,6 +99,7 @@ float: right;
    text-decoration: none;
    margin-bottom: 30px;
 }
+
 /* Задали всем блокам margin-right: 30px, кроме каждому 4-му, тоесть не задействован 4-й и 8-й!!!!  */
 .gallery-box:not(:nth-child(4n)) {
    margin-right: 30px;
@@ -111,6 +112,7 @@ float: right;
    background-color: #7fd9c7;
 }
 
+
 /* Оформляем текст внутри блока со свойством float */
 .gallery-box h3 {
    float: left;
@@ -121,7 +123,7 @@ float: right;
    color: #ffffff;
    background-color: #323232;
    font-family: "Roboto";
-   text-transform: uppercase;
+   text-transform: uppercase; 
 }
 .gallery-box p {
    float: right;
@@ -134,6 +136,7 @@ float: right;
    font-family: "Roboto";
    text-transform: uppercase;
 }
+
 
 /* Оформление блока Blog */
 .blog-news {
