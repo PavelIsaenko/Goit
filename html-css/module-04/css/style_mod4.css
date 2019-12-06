@@ -1,6 +1,6 @@
-body {
+/* body {
    background-color: rgb(236, 236, 139);
-}
+} */
 .clearfix {
    content: '';
    display: table;
@@ -16,7 +16,7 @@ body {
  .container {
     width: 1110px;
     margin: 0 auto;
-    background-color: rgb(207, 200, 200);
+    /* background-color: rgb(207, 200, 200); */
  }
 
  /* Menu stylization */
@@ -104,6 +104,10 @@ float: right;
    margin-right: 30px;
 }
 
+.gallery-link a:hover {
+   color:  #1abc9c;
+}
+
 /* Оформляем текст внутри блока со свойством float */
 .gallery-box h3 {
    float: left;
@@ -146,6 +150,7 @@ float: left;
    font-style: "OpenSans";
    color: #555252;
    position: relative;
+   line-height: 1.5;
 }
 .blog-news h3::after {
    content: '';
@@ -157,6 +162,30 @@ float: left;
    margin: auto;
    left: 0;
 }
+.blog-news p {
+   font-size: 14px;
+   margin: 18px 0 18px;
+   font-style: "OpenSans";
+   color: #555252;
+   line-height: 1.5;
+}
+
+/* Link button style */
+.blog-news a {
+   display: block;
+   width: 160px;
+   height: 40px;
+   background-color: #1abc9c;
+   border-radius: 3px;
+   text-decoration: none;
+   margin-bottom: 90px;
+   color: white;
+   font-family: "OpenSans";
+   font-size: 16px;
+   text-align: center;
+   padding: 18px 0 0 0;
+}
+
 
 
 
