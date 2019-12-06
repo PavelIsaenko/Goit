@@ -100,7 +100,7 @@ float: right;
    margin-bottom: 30px;
 }
 /* Задали всем блокам margin-right: 30px, кроме каждому 4-му, тоесть не задействован 4-й и 8-й!!!!  */
-.gallery div:not(:nth-child(4n)) {
+.gallery-box:not(:nth-child(4n)) {
    margin-right: 30px;
 }
 
@@ -127,6 +127,39 @@ float: right;
    font-family: "Roboto";
    text-transform: uppercase;
 }
+
+/* Оформление блока Blog */
+.blog-news {
+   width: 350px;
+float: left;
+}
+/* отступы 30px вправо, кроме последнего блога*/
+.blog-news:not(:last-child) {
+   margin-right: 30px;
+}
+
+/* Стилизируем текст ссылку@ */
+.blog-news h3 {
+   font-size: 18px;
+   margin: 18px 0 40px;
+   font-weight: bold;
+   font-style: "OpenSans";
+   color: #555252;
+   position: relative;
+}
+.blog-news h3::after {
+   content: '';
+   position: absolute;
+   width: 135px;
+   height: 5px;
+   background-color: #1abc9c;
+   bottom: -18px;
+   margin: auto;
+   left: 0;
+}
+
+
+
  
 
 
