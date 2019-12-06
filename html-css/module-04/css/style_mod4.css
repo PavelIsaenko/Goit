@@ -104,8 +104,11 @@ float: right;
    margin-right: 30px;
 }
 
-.gallery-link a:hover {
-   color:  #1abc9c;
+.gallery-box a:hover .gallery-text {
+   background-color: #1abc9c;
+}
+.gallery-box a:hover .gallery-price {
+   background-color: #7fd9c7;
 }
 
 /* Оформляем текст внутри блока со свойством float */
