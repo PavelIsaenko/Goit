@@ -1,0 +1,26 @@
+body {
+   font-family: "Raleway", "Arial",sans-serif;
+   color: #6c7279;
+   font-size: 14px;
+   line-height: 21px;
+}
+
+/* Style Menu */
+.page-header {
+   background-color: #3a3e64;
+}
+
+.site-navigation {
+   font-size: 13px;
+   list-style: none;
+}
+.site-navigation a {
+color: white;
+font-weight: 700;
+text-transform: uppercase;
+text-decoration: none;
+}
+.site-navigation li:first-child a {
+   color: blue;
+   
+}

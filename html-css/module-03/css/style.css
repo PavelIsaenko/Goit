@@ -10,7 +10,7 @@ body {
 .container {
    width: 900px;
    margin: 0 auto;
-   /* background-color: rgb(172, 216, 216); */
+   background-color: rgb(172, 216, 216);
 }
 
  /* Menu style */
@@ -22,6 +22,7 @@ body {
 .menu-navigation {
    /* margin: 0;
    padding: 0; */
+   font-size: 0;
    text-align: center;
    vertical-align: middle;
    padding: 70px 0 80px;
@@ -57,6 +58,7 @@ body {
    /* display: block; */
     margin: 0;
     padding: 0;
+    font-size: 0;
 }
 .box-item {
    width: 410px;
