@@ -1,5 +1,5 @@
 body {
-   background-color: rgb(236, 236, 139);
+   /* background-color: rgb(236, 236, 139); */
 }
 .clearfix::after {
    content: '';
@@ -135,6 +135,11 @@ float: right;
    background-color: #8c8c8c;
    font-family: "Roboto";
    text-transform: uppercase;
+}
+
+/* Что бы блок .gallery-box считался блочным элементом и не было расстояние между img & h3,p*/
+.gallery-box img {
+   display: block;
 }
 
 
