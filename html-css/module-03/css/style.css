@@ -10,7 +10,8 @@ body {
 .container {
    width: 900px;
    margin: 0 auto;
-   background-color: rgb(172, 216, 216);
+   padding-bottom: 70px;
+   /* background-color: rgb(172, 216, 216); */
 }
 
  /* Menu style */
@@ -20,31 +21,36 @@ body {
 }
 
 .menu-navigation {
-   /* margin: 0;
-   padding: 0; */
+   margin: 0;
+   padding: 0;
    font-size: 0;
    text-align: center;
    vertical-align: middle;
    padding: 70px 0 80px;
-
 }
 .menu-navigation li {
    display: inline-block;
-   margin: 0 25px;
+   margin-right: 25px;
    }
+
 /* .menu-navigation li:first-child {
    margin-left: 165px;
-   }
+   } */
 .menu-navigation li:last-child {
-   margin-right: 100px;
-} */
+   margin-right: 0;
+}
 
 .menu-navigation a {
    font-size: 14px;
    text-decoration: none;
    text-transform: uppercase;
    color: #777777;
+   display: block;
    /* font-family: Myriad Pro; */
+}
+
+.menu-navigation li:first-child a {
+   color: blue;
 }
 
 .menu-navigation a:hover,
@@ -62,19 +68,19 @@ body {
 }
 .box-item {
    width: 410px;
-  display: inline-block;
-  padding: 0;
+   display: inline-block;
+   padding: 0;
    margin-bottom: 105px;
    text-align: left;
 }
 
 /* Придвигаем каждый 2-й блок Li к правой стороне */
 .box-item:nth-child(2n) {
-   margin-left: 75px;  
-}
-/* Даем всем левым блокам margin 0, что бы не было сдвигов  */
-.box-item:nth-child(2n+1) {
    margin-right: 0;  
+}
+/* Даем всем левым блокам margin 80, что бы отодвинуть правые блоки к краю контейнера  */
+.box-item:nth-child(2n+1) {
+   margin-right: 80px;  
 }
 /* 5-му и 6-му блоку делаем меньше отступ снизу для конпки (Button) */
 .box li:nth-child(n+5) {
@@ -109,21 +115,22 @@ body {
 }
 
 /* Стилизуем кнопку */
+
 .button {
    display: block;
-   text-align: center;
-   background-color: white;
-   margin-bottom: 60px;
-}
-button {
-   display: inline-block;
+   margin: 0 auto;
    width: 160px;
    height: 60px;
    font-size: 20px;
    color: #626262;
-   /* font-family: Myriad Pro; */
+   font-family: "PlayfairDispaly";   
    background-color: white;
-   border: 1px solid #626262;
+   /* border: 1px solid #626262; */
+}
+.button:hover {
+   background: rgba(0,0,0,0);
+	color: #3a7999;
+	box-shadow: inset 0 0 0 3px #3a7999;
 }
 
 

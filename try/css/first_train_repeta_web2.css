@@ -5,6 +5,22 @@ body {
    line-height: 21px;
 }
 
+.visually-hidden:not(:focus):not(:active), input[type="checkbox"].visually-hidden, input[type="radio"].visually-hidden {
+   position: absolute;
+ 
+   width: 1px;
+   height: 1px;
+   margin: -1px;
+   border: 0;
+   padding: 0;
+ 
+   white-space: nowrap;
+ 
+   clip-path: inset(100%);
+   clip: rect(0 0 0 0);
+   overflow: hidden;
+ }
+
 /* Style Menu */
 .page-header {
    background-color: #3a3e64;
@@ -19,8 +35,42 @@ color: white;
 font-weight: 700;
 text-transform: uppercase;
 text-decoration: none;
+line-height: 16px;
 }
 .site-navigation li:first-child a {
-   color: blue;
-   
+   color: blue;   
+}
+
+/* Stle block Features */
+.features-list {
+   list-style: none;
+}
+.features-list-item {
+   color: #2d3033;
+   line-height: 17px;
+}
+.features-list-item h3 {
+   color: #2d3033;
+   line-height: 17px;
+}
+
+
+/* Style block Team */
+.team-list {
+   list-style: none;
+}
+.team-list-name {
+   font-size: 22px;
+   line-height: 26px;
+   color: #2d3033;
+}
+.team-list-occupation {
+   font-size: 13px;
+   line-height: 16px;
+   color: #e84545;
+}
+
+/* Footer */
+.page-footer {
+   background-color: #3a3e64;
 }
