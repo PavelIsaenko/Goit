@@ -79,22 +79,34 @@ body {
    margin-right: 0;  
 }
 /* Даем всем левым блокам margin 80, что бы отодвинуть правые блоки к краю контейнера  */
-.box-item:nth-child(2n+1) {
+/* .box-item:nth-child(2n+1) {
    margin-right: 80px;  
-}
+} */
 /* 5-му и 6-му блоку делаем меньше отступ снизу для конпки (Button) */
 .box li:nth-child(n+5) {
    margin-bottom: 50px; 
 }
  
 
-.box-item img {
-   width: 410px;
-} 
+
 /* Text */
+
+/* .box-item p, h2, h3 {
+   margin: 30px auto;
+}  */
+.box-item {
+   margin: 0;
+   /* Либо задаем блокам margin-right: 60px;и левые блоки прижмутся к правому края так, как у них margin-right: 0. */
+   width: 420px;
+   margin-right: 60px;
+
+}
+
 .box-item p, h2, h3 {
    margin: 30px auto;
-} 
+}
+
+
 .box-item h3 {
    color: #c8c3b9;
    font-size: 14px;
