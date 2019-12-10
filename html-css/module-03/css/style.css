@@ -141,7 +141,11 @@ margin-bottom: 30px;
 }
 
 /* Задал margin-bottom: 133px всем .box-item p кроме 5 и 6-го с помощью данного псевдокласса  */
-.box-item p:not(:last-child(n+5)) {
+/* .box-item:not(:last-child(n5)) {
+   margin-bottom: 133px;
+} */
+
+.box li:not(:nth-child(n+5)) p {
    margin-bottom: 133px;
 }
 
