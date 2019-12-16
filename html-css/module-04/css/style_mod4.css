@@ -1,17 +1,17 @@
-body {
-   /* background-color: rgb(236, 236, 139); */
-}
+/* body {
+   background-color: rgb(236, 236, 139);
+} */
 .clearfix::after {
    content: '';
    display: table;
    clear: both;
 }
 
-/* img {
+img {
    display: block;
    width: 100%;
    height: auto;
- } */
+ }
 
  .container {
     width: 1110px;
@@ -137,10 +137,11 @@ float: right;
    text-transform: uppercase;
 }
 
+
 /* Что бы блок .gallery-box считался блочным элементом и не было расстояние между img & h3,p*/
-.gallery-box img {
+/* .gallery-box img {
    display: block;
-}
+} */
 
 
 /* Оформление блока Blog */
