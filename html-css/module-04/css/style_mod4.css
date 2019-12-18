@@ -21,13 +21,16 @@ img {
 
  /* Menu stylization */
  /* Logo */
+ .menu {
+    padding-top: 38px;
+ }
  .menu-logo {
     float: left;
     text-decoration: none;
  }
 .menu-logo h1 {
    /* margin-top: 36px; */
-   padding-top: 36px;
+   /* padding-top: 36px; */
    font-size: 30px;
    font-family: "Roboto";
    color: #555252;
@@ -43,10 +46,12 @@ img {
  /* Menu */
  .menu-item {
 float: right;
+padding-top: 6px;
  }
  .menu-item li {
     /* margin-top: 42px; */
-    padding-top: 42px;
+    /* padding-top: 42px; */
+    
     float: left;
     margin-right: 32px;
  }
@@ -64,9 +69,9 @@ float: right;
     line-height: 0.786;
  }
  /* Задаем 1-му пункту меню (home) данный цвет */
- .menu-item li:first-child a {
+ /* .menu-item li:first-child a {
     color: #1abc9c;
- }
+ } */
  /* Чтобы ссылка становилась зеленой при наведении на неё */
  .menu-item a:hover {
    color: #1abc9c; 
@@ -78,8 +83,8 @@ float: right;
 /* Оформление и размещене title */
 .title {
    display: block;
-   margin-top: 105px;
-   margin-bottom: 132px;
+   padding-top: 105px;
+   padding-bottom: 132px;
 }
 .title h2 {
    text-align: center;
@@ -100,7 +105,7 @@ float: right;
    /* что бы задать позиционирование абсолютные по средние */
    left: 0;
    right: 0;
-   margin: auto;
+   margin: 0 auto;
 }
 
  /* Позиционирование оформление gallery-box */
@@ -110,9 +115,10 @@ float: right;
 
 .gallery-box {
    float: left;
-   /* width: 255px; */
+   width: 255px;
    text-decoration: none;
 }
+
 /* Задаем боксам margin-bottom: 30px, кроме 4-х нижних */
 .gallery-box:not(:nth-child(n+5)) {
    margin-bottom: 30px;
@@ -165,11 +171,13 @@ float: right;
 
 /* Оформление блока Blog */
 
-
+.blog {
+margin-bottom: 90px;
+}
 .blog-news {
    width: 350px;
    float: left;
-   padding-bottom: 90px;
+   /* padding-bottom: 90px; */
 }
 
 /* отступы 30px вправо, кроме последнего блога*/
@@ -180,7 +188,7 @@ float: right;
 /* Стилизируем текст ссылку@ */
 .blog-news h3 {
    font-size: 18px;
-   margin: 18px 0 40px;
+   margin: 18px 0 30px;
    font-weight: bold;
    font-style: "OpenSans";
    color: #555252;
@@ -189,13 +197,14 @@ float: right;
 }
 .blog-news h3::after {
    content: '';
-   position: absolute;
+   display: block;
+   /* position: absolute; */
    width: 135px;
    height: 5px;
    background-color: #1abc9c;
-   bottom: -18px;
-   margin: auto;
-   left: 0;
+   /* bottom: -18px; */
+   margin-top: 15px;
+  
 }
 .blog-news p {
    font-size: 14px;
