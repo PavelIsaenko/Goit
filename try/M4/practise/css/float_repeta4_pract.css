@@ -55,7 +55,9 @@ body {
 /* Style Menu */
 .page-header {
    background-color: #3a3e64;
-   margin-bottom: 120px;
+   box-shadow: 0 5px 4px rgba(0, 0, 0, 0.25);
+   /* Banner будет иметь отступ 120px */
+   /* margin-bottom: 200px; */
 }
 
 /* Задаем внутренние отступы для увеления блока header-меню */
@@ -108,6 +110,28 @@ line-height: 16px;
    color: blue;   
 }
 
+/* Banner */
+.banner {
+   min-height: 600px;
+   margin-bottom: 120px;
+   background: linear-gradient( to right,
+    rgba(255, 0, 0, 0.3),
+     rgba(0, 0, 255, 0.3)),
+   linear-gradient( to top,
+    rgba(0, 210, 250, 0.3),
+     rgba(145, 140, 170, 0.3)),
+   url(../img/banner.jpeg) no-repeat center/ cover;
+   /* background-size: cover; */
+
+
+   /* Again try Gridient-linear */
+   /* background: linear-gradient( to left ,rgba(108, 114, 121, 0.3), rgba( 30, 130, 0, 0.4)
+   ),
+   url(../img/banner.jpeg) no-repeat center / cover; */
+}
+
+
+
 
 
 
@@ -146,7 +170,8 @@ line-height: 16px;
 
 
 /* Стилизируем иконки с помощью псевдоелементов */
-[class*="item"]::before {
+/* [class*="item"]::before */
+.features-list-item::before {
    content: '';
    display: block;
    /* width: 100%; */
@@ -196,10 +221,33 @@ line-height: 16px;
    padding: 0;
    font-size: 0;
 }
+
+/* за счет padding: 10px;
+   box-shadow: сделали эфект наведения на карточку */
 .team-list-item {
    float: left;
    width: 270px;
+   padding: 10px;
+   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
 } 
+.team-list-item:hover {
+   box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.team-list-item:hover img {
+   filter:grayscale(0.3);
+}
+
+/* Filter for image */
+/* задали всем картинкам-команды серый фон */
+.team-list-image {
+filter:grayscale(1);
+}
+/* При наведение за счет hover возвращается реальный вид */
+/* .team-list-image:hover {
+   filter:grayscale(0); 
+} */
+
 /* задаем всем .team-list-item (li) значение margin-right: 30px, кроме последнего */
 .team-list-item:not(:last-child) {
    margin-right: 30px;
