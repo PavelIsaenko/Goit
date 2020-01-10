@@ -1,0 +1,219 @@
+/* html {
+   box-sizing: border-box;
+ }
+ 
+ *,
+ *::before,
+ *::after {
+   box-sizing: inherit;
+ }
+ 
+ body {
+   font-family: 'PT Sans', sans-serif;
+   font-size: 16px;
+   line-height: 1.5;
+ }
+ 
+ img {
+   display: block;
+   max-width: 100%;
+   height: auto;
+ }
+ 
+ .slider {
+   position: relative;
+   width: 800px;
+   height: 400px;
+   margin: auto;
+   box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.3);
+ }
+ 
+ .slider-ctrl {
+   position: absolute;
+   top: 50%;
+   transform: translateY(-50%);
+   border: none;
+   display: inline-block;
+   width: 50px;
+   height: 57px;
+   background-color: #26b9e1;
+   font-weight: 700;
+   cursor: pointer;
+   z-index: 1;
+ }
+ 
+ .slider-ctrl-prev {
+   left: 0;
+ }
+ 
+ .slider-ctrl-next {
+   right: 0;
+ }
+ 
+ .slides {
+   margin: 0;
+   padding: 0;
+   list-style: none;
+ }
+ 
+ .slides-item {
+   position: relative;
+ }
+ 
+ .slides-image {
+   height: 400px;
+   width: 100%;
+   object-fit: cover;
+ }
+ 
+ .slides-descr {
+   position: absolute;
+   bottom: 10px;
+   right: 10px;
+   width: 350px;
+   padding: 10px;
+   margin: 0;
+   background-color: #fff;
+ }
+ 
+ .slider-pagination {
+   position: absolute;
+   bottom: -40px;
+   left: 50%;
+   transform: translateX(-50%);
+ }
+ 
+ .slider-pagination-item {
+   display: inline-block;
+   width: 60px;
+   height: 5px;
+   background-color: #b0b8b9;
+   cursor: pointer;
+ }
+ 
+ .slider-pagination-active {
+   background-color: #20a8da;
+ } */
+
+/* Replicat code for myself */
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: "PT Sans", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* оформляем блок слайдера */
+.slider {
+  position: relative;
+  width: 800px;
+  height: 400px;
+  margin: auto;
+  box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.3);
+}
+
+/* Оформляем кнопки-стрелки */
+.slider-ctrl {
+  position: absolute;
+  display: inline-block;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 50px;
+  height: 57px;
+  border: none;
+  background-color: #20a8da;
+  z-index: 1;
+  
+}
+.slider-ctrl-prev {
+  left: 0;
+}
+
+/* Создаем стрелки с помощью псевдоклассов ::before */
+.slider-ctrl-prev::before {
+  content: '';
+  position: absolute;
+  width: 20px;
+   height: 20px;
+  border-left: 1px solid #000;
+  border-bottom: 1px solid #000;
+  transform: rotate(45deg);
+  bottom: 18px;
+  right: 10px;
+}
+
+.slider-ctrl-next {
+  right: 0;
+}
+.slider-ctrl-next::before {
+  content: '';
+  position: absolute;
+  width: 20px;
+   height: 20px;
+  border-left: 1px solid #000;
+  border-bottom: 1px solid #000;
+  transform: rotate(225deg);
+  bottom: 18px;
+  left: 10px;
+}
+
+
+/* Офориление слада картинки img */
+.slides {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* Задаем li значение position: relative, что бы текст стал поверх картинки  */
+.slides-item {
+  position: relative;
+}
+
+.slides-image {
+  height: 400px;
+  width: 100%;
+  /* задаем полное покрытие площади картинки но с пропорциями */
+  object-fit: cover;
+}
+
+.slides-text {
+  /* width: 600px; */
+  position: absolute;
+  top: 150px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* оформление нижнего ряда прокрутки */
+.slider-pagination {
+  position: absolute;
+  bottom: -40px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.slider-pagination-item {
+  display: inline-block;
+  width: 60px;
+  height: 5px;
+  background-color: #b0b8b9;
+}
+.slider-pagination-active {
+  background-color: #20a8da;
+}

@@ -121,9 +121,11 @@ line-height: 16px;
     rgba(0, 210, 250, 0.3),
      rgba(145, 140, 170, 0.3)),
    url(../img/banner.jpeg) no-repeat center/ cover;
+}
+
    /* background-size: cover; */
 
-
+   
    /* Again try Gridient-linear */
    /* background: linear-gradient( to left ,rgba(108, 114, 121, 0.3), rgba( 30, 130, 0, 0.4)
    ),
