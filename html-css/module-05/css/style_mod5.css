@@ -1,0 +1,50 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.container {
+  width: 1140px;
+  margin: 0 auto;
+  background-color: grey;
+}
+
+/* Style menu+logo */
+.menu {
+  padding: 38px 0;
+  /* line-height: 22px;
+  vertical-align: middle; */
+}
+
+.menu-logo {
+  /* display: inline-block; */
+  float: left;
+}
+
+/* Navig-menu */
+.menu-navigation {
+  /* display: inline-block; */
+  float: right;
+  margin: 0;
+  padding: 0;
+}
+.menu-navigation li {
+  display: inline-block;
+}
