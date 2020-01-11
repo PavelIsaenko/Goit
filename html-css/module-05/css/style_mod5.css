@@ -26,6 +26,7 @@ img {
   background-color: grey;
 }
 
+
 /* Style menu+logo */
 .menu {
   padding: 38px 0;
@@ -33,10 +34,30 @@ img {
   vertical-align: middle; */
 }
 
+/* Style Logo */
 .menu-logo {
   /* display: inline-block; */
   float: left;
+  text-decoration: none;
 }
+.menu-logo h1 {
+  font-size: 30px;
+  font-family: "Roboto";
+  color: #555252;
+  text-transform: uppercase;
+  line-height: 1.067;
+  font-weight: 400;
+}
+.menu-logo h1::first-letter {
+  color: #1abc9c;
+  font-weight: 900;
+
+}
+
+
+
+
+
 
 /* Navig-menu */
 .menu-navigation {
@@ -44,6 +65,7 @@ img {
   float: right;
   margin: 0;
   padding: 0;
+  padding-top: 6px;
 }
 .menu-navigation li {
   display: inline-block;
