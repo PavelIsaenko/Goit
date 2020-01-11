@@ -24,7 +24,7 @@ img {
 .container {
   width: 1140px;
   margin: 0 auto;
-  background-color: grey;
+  /* background-color: grey; */
 }
 
 /* Style menu+logo */
@@ -74,6 +74,7 @@ img {
   font-weight: bold;
   color: #0f0101;
   text-decoration: none;
+  text-transform: uppercase;
 }
 .menu-navigation a:hover {
   color: #1abc9c;
@@ -165,5 +166,93 @@ img {
 }
 
 
-/* Style block Collection */
 
+/* Style block Collection */
+.collection {
+  padding: 100px 0;
+  background-color: #e9f0fd;
+  
+}
+
+/* Задаем размеры блока "team" i "title" */
+.wrap-team {
+  width: 1140px;
+  margin: 0 auto;
+  /* background-color: rgb(99, 144, 185); */
+  /* text-align: center; */
+}
+
+/* Style title h2*/
+.title {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 120px;
+  position: relative;
+  text-align: center;
+}
+.title h2 {
+  font-size: 48px;
+  font-family: "Roboto";
+  font-weight: 900;
+  text-transform: uppercase;
+  color: #515151;
+}
+/* Style line */
+.title h2::after {
+  content: "";
+  position: absolute;
+  width: 160px;
+  height: 8px;
+  background-color: #1abc9c;
+  top: 66px;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+/* style team block */
+.team {
+  display: inline-block;
+  font-size: 0;
+  text-decoration: none;
+}
+/* Задаем для всех (team) блоков оступ вправо на 30px, кроме последнего */
+.team:not(:last-child) {
+  margin-right: 36px;
+}
+
+.team p {
+  display: inline-block;
+  height: 40px;
+}
+
+.team-text {
+  width: 200px;
+  font-size: 18px;
+  font-family: "Roboto";
+  font-weight: 700;
+  text-transform: uppercase;
+  background-color: #323232;
+  color: #ffffff;
+  vertical-align: top;
+  line-height: 40px;
+  padding-left: 15px;
+}
+.team-price {
+  width: 55px;
+  font-size: 18px;
+  font-family: "Roboto";
+  font-weight: 700;
+  text-transform: uppercase;
+  background-color: #8c8c8c;
+  color: #ffffff;
+  text-align: center;
+  padding-top: 11px;
+}
+/* Делаем активное наведение курсором(мышкой) на блок (team) */
+.team a:hover .team-text {
+  background-color: #1abc9c;
+}
+.team a:hover .team-price {
+  background-color: #7fd9c7;
+}
