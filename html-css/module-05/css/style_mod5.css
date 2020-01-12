@@ -27,6 +27,9 @@ img {
   /* background-color: grey; */
 }
 
+
+
+
 /* Style menu+logo */
 .menu {
   padding: 38px 0;
@@ -79,6 +82,8 @@ img {
 .menu-navigation a:hover {
   color: #1abc9c;
 }
+
+
 
 /* Style block gallery-slider */
 .gallery-slider {
@@ -314,9 +319,6 @@ img {
   cursor: pointer;
 }
 
-
-
-
 /* .team a:hover .modal-dackdrop .but-card {
   position: absolute;
   opacity: 1;
@@ -327,9 +329,46 @@ img {
   top: 20%;
   transform: translate( 5%, 10%);
 } */
-
 /* .but-card img {
   display: inline-block;
   margin-right: 8px; 
   padding: 0;
 } */
+
+
+
+/* Style block Footer */
+.footer {
+  height: 100px;
+  background-color: #323232;
+}
+
+.baseline {
+  display: block;
+  width: 400px;
+  margin: 0 auto;
+  padding-top: 36px;
+}
+.baseline li {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  margin-right: 4px;
+}
+.baseline a {
+  font-family: "OpenSans";
+  font-size: 16px;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+/* Делаю для пункта "Designed" боковой слеш и отступ */
+.baseline-slash {
+  border-left: 1px solid #ffffff;
+  padding-left: 8px;
+}
+/* фактивные ссылки  цветом/курсор*/
+.baseline a:hover {
+  color: #46bfa9;
+}
+
