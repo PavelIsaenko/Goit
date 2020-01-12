@@ -256,3 +256,55 @@ img {
 .team a:hover .team-price {
   background-color: #7fd9c7;
 }
+
+
+
+/* style Backdrop modal window*/
+.modal-dackdrop {
+  /* position: absolute; */
+  position: fixed;
+  /* display: none; */
+  width: 255px;
+  height: 280px;
+}
+
+/* Style card-button */
+.but-card {
+  position: absolute;
+  width: 175px;
+  height: auto;
+  left: 10%;
+  top: 20%;
+  transform: translate( 5%, 20%);
+  /* background-color: teal; */
+}
+.but-card img {
+  display: inline-block;
+  margin-right: 8px; 
+  padding: 0;
+}
+.bottom-card {
+  margin-top: 8px;
+}
+
+/* Делаем активное поле (modal-dackdrop) на картинке при навидении курсором мыши */
+.team a:hover .modal-dackdrop {
+  display: block;
+  position: absolute;
+  margin-top: 10px;
+  margin-left: 10px;
+  width: 235px;
+  height: 260px;
+  background-color: #737373;
+  opacity: 0.9;
+}
+/* .team a:hover .modal-dackdrop .but-card {
+  position: absolute;
+  opacity: 1;
+  background-color: teal;
+  width: 235px;
+  height: 260px;
+  left: 10%;
+  top: 20%;
+  transform: translate( 5%, 10%);
+} */
