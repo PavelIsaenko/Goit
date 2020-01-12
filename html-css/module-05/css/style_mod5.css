@@ -107,6 +107,7 @@ img {
   background-color: #509c8b;
   opacity: 0.8;
   border: none;
+  cursor: pointer;
 }
 
 .slider-but-prev {
@@ -164,6 +165,7 @@ img {
   color: #ffffff;
   font-weight: 400;
 }
+
 
 
 
@@ -260,35 +262,43 @@ img {
 
 
 /* style Backdrop modal window*/
-.modal-dackdrop {
-  /* position: absolute; */
+.modal-backdrop {
   position: fixed;
   /* display: none; */
   width: 255px;
   height: 280px;
 }
 
-/* Style card-button */
+/* Style card-button иконки */
 .but-card {
   position: absolute;
   width: 175px;
   height: auto;
   left: 10%;
-  top: 20%;
+  top: 25%;
   transform: translate( 5%, 20%);
   /* background-color: teal; */
 }
-.but-card img {
+.but-card button {
+  margin: 0;
+  padding: 0;
   display: inline-block;
   margin-right: 8px; 
-  padding: 0;
+  background-color: #737373;
+  border: none;
+  /* background-color: teal; */
+  /* cursor: pointer; */
 }
+/* .but-card button img {
+  cursor: pointer;
+} */
 .bottom-card {
-  margin-top: 8px;
+  position: absolute;
+  top: 58px;
 }
 
 /* Делаем активное поле (modal-dackdrop) на картинке при навидении курсором мыши */
-.team a:hover .modal-dackdrop {
+.team a:hover .modal-backdrop {
   display: block;
   position: absolute;
   margin-top: 10px;
@@ -297,7 +307,16 @@ img {
   height: 260px;
   background-color: #737373;
   opacity: 0.9;
+  cursor: default;
 }
+/* Задаю для иконок but-card при наведении смена курсора на руку */
+.team a:hover .modal-backdrop .but-card button img {
+  cursor: pointer;
+}
+
+
+
+
 /* .team a:hover .modal-dackdrop .but-card {
   position: absolute;
   opacity: 1;
@@ -307,4 +326,10 @@ img {
   left: 10%;
   top: 20%;
   transform: translate( 5%, 10%);
+} */
+
+/* .but-card img {
+  display: inline-block;
+  margin-right: 8px; 
+  padding: 0;
 } */
