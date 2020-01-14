@@ -70,6 +70,7 @@ img {
 }
 
 .menu-navigation a {
+  display: block;
   font-family: "Roboto";
   font-size: 14px;
   font-weight: bold;
@@ -258,10 +259,10 @@ img {
   padding-top: 11px;
 }
 /* Делаем активное наведение курсором(мышкой) на блок (team) */
-.team li:hover .team-text {
+.team:hover .team-text {
   background-color: #1abc9c;
 }
-.team li:hover .team-price {
+.team:hover .team-price {
   background-color: #7fd9c7;
 }
 
@@ -331,7 +332,7 @@ img {
 }
 
 /* Делаем активное поле (modal-dackdrop) на картинке при навидении курсором мыши */
-.team li:hover .modal-backdrop {
+.team:hover .modal-backdrop {
   display: block;
   position: absolute;
   margin-top: 10px;
