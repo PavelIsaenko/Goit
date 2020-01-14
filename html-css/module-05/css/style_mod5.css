@@ -1,6 +1,6 @@
 html {
   box-sizing: border-box;
-  width: 1600px;
+  /* width: 1600px; */
 }
 
 *,
@@ -26,9 +26,6 @@ img {
   margin: 0 auto;
   /* background-color: grey; */
 }
-
-
-
 
 /* Style menu+logo */
 .menu {
@@ -73,6 +70,7 @@ img {
 }
 
 .menu-navigation a {
+  font-family: "Roboto";
   font-size: 14px;
   font-weight: bold;
   color: #0f0101;
@@ -83,11 +81,9 @@ img {
   color: #1abc9c;
 }
 
-
-
 /* Style block gallery-slider */
 .gallery-slider {
-  width: 1600px;
+  /* width: 1600px; */
   height: 600px;
   background: url(../img/slide.png) no-repeat center/ cover;
 }
@@ -102,6 +98,7 @@ img {
   /* background-color: yellow; */
   margin: 0 auto;
 }
+
 .slider-but {
   position: absolute;
   display: inline-block;
@@ -115,6 +112,8 @@ img {
   cursor: pointer;
 }
 
+
+/* Сами стрелки стилизуем */
 .slider-but-prev {
   left: 0;
 }
@@ -171,14 +170,10 @@ img {
   font-weight: 400;
 }
 
-
-
-
 /* Style block Collection */
 .collection {
   padding: 100px 0;
   background-color: #e9f0fd;
-  
 }
 
 /* Задаем размеры блока "team" i "title" */
@@ -196,16 +191,22 @@ img {
   margin-bottom: 120px;
   position: relative;
   text-align: center;
-}
-.title h2 {
   font-size: 48px;
   font-family: "Roboto";
   font-weight: 900;
   text-transform: uppercase;
   color: #515151;
 }
+/* .title h2 {
+  font-size: 48px;
+  font-family: "Roboto";
+  font-weight: 900;
+  text-transform: uppercase;
+  color: #515151;
+} */
+
 /* Style line */
-.title h2::after {
+.title::after {
   content: "";
   position: absolute;
   width: 160px;
@@ -257,16 +258,16 @@ img {
   padding-top: 11px;
 }
 /* Делаем активное наведение курсором(мышкой) на блок (team) */
-.team a:hover .team-text {
+.team li:hover .team-text {
   background-color: #1abc9c;
 }
-.team a:hover .team-price {
+.team li:hover .team-price {
   background-color: #7fd9c7;
 }
 
 
 
-/* style Backdrop modal window*/
+/* style Backdrop modal window!!!!!!*/
 .modal-backdrop {
   position: fixed;
   /* display: none; */
@@ -281,29 +282,56 @@ img {
   height: auto;
   left: 10%;
   top: 25%;
-  transform: translate( 5%, 20%);
+  transform: translate(5%, 20%);
   /* background-color: teal; */
 }
-.but-card button {
+
+.but-img {
+  /* position: relative; */
   margin: 0;
   padding: 0;
   display: inline-block;
-  margin-right: 8px; 
-  background-color: #737373;
+  margin-right: 8px;
   border: none;
-  /* background-color: teal; */
-  /* cursor: pointer; */
+  /* width: 50px;
+  height: 50px; */
+  /* background: url(../img/time_but.png) no-repeat center;  */
 }
-/* .but-card button img {
-  cursor: pointer;
-} */
+
+/* Задаем каждой кнопке свою картинку и размеры, что бы была видимость при ховер */
+.but-img-like {
+  /* position: absolute; */
+  width: 50px;
+  height: 50px;
+  background: url(../img/like.png) no-repeat center;
+}
+.but-img-changing {
+  vertical-align: top;
+  /* position: absolute; */
+  /* margin-bottom: 15px; */
+  width: 50px;
+  height: 50px;
+  border: 1px solid #ffffff;
+  background: url(../img/arrow.png) no-repeat center;
+}
+.but-img-time {
+  /* position: absolute; */
+  width: 50px;
+  height: 50px;
+  background: url(../img/time_but.png) no-repeat center;
+}
 .bottom-card {
   position: absolute;
+  background: url(../img/add\ to\ cart.png) no-repeat center;
   top: 58px;
+  display: block;
+  width: 167px;
+  height: 50px;
+  border: none;
 }
 
 /* Делаем активное поле (modal-dackdrop) на картинке при навидении курсором мыши */
-.team a:hover .modal-backdrop {
+.team li:hover .modal-backdrop {
   display: block;
   position: absolute;
   margin-top: 10px;
@@ -315,27 +343,46 @@ img {
   cursor: default;
 }
 /* Задаю для иконок but-card при наведении смена курсора на руку */
-.team a:hover .modal-backdrop .but-card button img {
+/* .team li:hover .modal-backdrop .but-card .but-img {
   cursor: pointer;
+  width: 50px;
+  height: 50px;
+  background-color: teal;
+  background: url(../img/time_but.png) no-repeat center;
+  width: 50px;
+  height: 50px;
+  border: 1px solid teal;
+  background-color: teal;
+  color: #000;
+  background-color: #1abc9c;
+} */
+
+/* Задаю для иконок but-card при наведении смена курсора на руку, а также меняем цвет фона*/
+.but-img:hover {
+  cursor: pointer;
+  background-color: #1abc9c;
+}
+.bottom-card:hover {
+  cursor: pointer;
+  background-color: #1abc9c;
 }
 
-/* .team a:hover .modal-dackdrop .but-card {
-  position: absolute;
-  opacity: 1;
+/* .team li:focus .but-img {
   background-color: teal;
-  width: 235px;
-  height: 260px;
-  left: 10%;
-  top: 20%;
-  transform: translate( 5%, 10%);
-} */
-/* .but-card img {
-  display: inline-block;
-  margin-right: 8px; 
-  padding: 0;
 } */
 
-
+/* .team li:link .modal-backdrop .but-card .but-img {
+   width: 50px;
+  height: 50px;
+  border: 1px solid teal;
+  background-color: teal;
+  color: #000;
+} */
+.team li:focus .modal-backdrop .but-card .bottom-card {
+  border: 1px solid teal;
+  background-color: teal;
+  color: #000;
+}
 
 /* Style block Footer */
 .footer {
@@ -349,7 +396,7 @@ img {
   margin: 0 auto;
   padding-top: 36px;
 }
-.baseline li {
+.baseline p {
   display: inline-block;
   margin: 0;
   padding: 0;
@@ -371,4 +418,3 @@ img {
 .baseline a:hover {
   color: #46bfa9;
 }
-
