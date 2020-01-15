@@ -1,0 +1,117 @@
+/* style Backdrop modal window!!!!!!*/
+.modal-backdrop {
+  /* ѕочему position: fixed;, а не display: none; € не знаю...*/
+  position: fixed;
+  /* display: none; */
+  width: 255px;
+  height: 280px;
+}
+
+/* Style card-button иконки */
+.but-card {
+  position: absolute;
+  width: 175px;
+  height: auto;
+  left: 10%;
+  top: 25%;
+  transform: translate(5%, 20%);
+  /* background-color: teal; */
+}
+
+.but-img {
+  /* position: relative; */
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+  margin-right: 8px;
+  border: none;
+  /* width: 50px;
+  height: 50px; */
+  /* background: url(../img/time_but.png) no-repeat center;  */
+}
+
+/* «адаем каждой кнопке свою картинку и размеры, что бы была видимость при ховер */
+.but-img-like {
+  /* position: absolute; */
+  width: 50px;
+  height: 50px;
+  background: url(../img/like.png) no-repeat center;
+}
+.but-img-changing {
+  vertical-align: top;
+  /* position: absolute; */
+  /* margin-bottom: 15px; */
+  width: 50px;
+  height: 50px;
+  border: 1px solid #ffffff;
+  background: url(../img/arrow.png) no-repeat center;
+}
+.but-img-time {
+  /* position: absolute; */
+  width: 50px;
+  height: 50px;
+  background: url(../img/time_but.png) no-repeat center;
+}
+.bottom-card {
+  position: absolute;
+  background: url(../img/add\ to\ cart.png) no-repeat center;
+  top: 58px;
+  display: block;
+  width: 167px;
+  height: 50px;
+  border: none;
+}
+
+/* ƒелаем активное поле (modal-dackdrop) на картинке при навидении курсором мыши */
+.team:hover .modal-backdrop {
+  display: block;
+  position: absolute;
+  margin-top: 10px;
+  margin-left: 10px;
+  width: 235px;
+  height: 260px;
+  background-color: #737373;
+  opacity: 0.9;
+  cursor: default;
+}
+/* «адаю дл€ иконок but-card при наведении смена курсора на руку */
+/* .team li:hover .modal-backdrop .but-card .but-img {
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  background-color: teal;
+  background: url(../img/time_but.png) no-repeat center;
+  width: 50px;
+  height: 50px;
+  border: 1px solid teal;
+  background-color: teal;
+  color: #000;
+  background-color: #1abc9c;
+} */
+
+/* «адаю дл€ иконок but-card при наведении смена курсора на руку, а также мен€ем цвет фона*/
+.but-img:hover {
+  cursor: pointer;
+  background-color: #1abc9c;
+}
+.bottom-card:hover {
+  cursor: pointer;
+  background-color: #1abc9c;
+}
+
+/* .team li:focus .but-img {
+  background-color: teal;
+} */
+
+/* .team li:link .modal-backdrop .but-card .but-img {
+   width: 50px;
+  height: 50px;
+  border: 1px solid teal;
+  background-color: teal;
+  color: #000;
+} */
+.team li:focus .modal-backdrop .but-card .bottom-card {
+  border: 1px solid teal;
+  background-color: teal;
+  color: #000;
+}

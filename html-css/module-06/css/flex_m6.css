@@ -1,0 +1,90 @@
+html {
+   box-sizing: border-box;
+   /* width: 1600px; */
+ }
+ 
+ *,
+ *::before,
+ *::after {
+   box-sizing: inherit;
+ }
+ 
+ img {
+   display: block;
+   max-width: 100%;
+   height: auto;
+ }
+
+.container {
+   width: 1200px;
+   height: auto;
+   /* background-color: grey; */
+   margin: 0 auto; 
+}
+
+
+/* Style Header */
+.menu {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   padding: 30px 0;
+}
+
+
+/* Style menu-nav */
+.menu-navigation {
+   height: 23px;
+   display: flex;
+   width: 490px;
+   flex-direction: row;
+   justify-content: space-between;
+   /* vertical-align: middle; */
+}
+
+.menu-navigation li {
+  
+   height: 23px;
+   width: 70px;
+   margin: 0;
+   padding: 0;
+}
+
+/* Style link-block */
+.menu-navigation a {
+   position: relative;
+   display: block;
+   text-align: center;
+   font-family: 'Montserrat', sans-serif;
+   font-size: 14px;
+   color: #b0e9de;
+   text-decoration: none;
+   font-weight: 500;
+   text-transform: uppercase;
+   line-height: 23px;
+}
+
+.menu-navigation a:hover,
+.menu-navigation a:focus {
+   color: #f38181;
+   transition-duration: 1.2s;
+  
+}
+
+/*Style Effect to appearance of line*/
+.menu-navigation a:hover::before {
+   content: '';
+   position: absolute;
+   width: 60px;
+   height: 2px;
+   transition-property: 
+      width,
+      background-color,
+      border-color;
+    transition-duration: 1.2s;
+   background-color: #f38181;
+   border: 1px solid #f38181;
+   top: 30px;
+   left: 5px;
+   /* margin: 0 auto; */
+}
