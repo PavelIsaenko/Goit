@@ -20,6 +20,7 @@ html {
    height: auto;
    /* background-color: grey; */
    margin: 0 auto; 
+   /* padding-bottom: 90px; */
 }
 
 
@@ -29,6 +30,7 @@ html {
    flex-direction: row;
    justify-content: space-between;
    padding: 30px 0;
+   background-color: yellow;
 }
 
 
@@ -43,11 +45,11 @@ html {
 }
 
 .menu-navigation li {
-  
    height: 23px;
-   width: 70px;
+   width: auto;
    margin: 0;
    padding: 0;
+   vertical-align: middle;
 }
 
 /* Style link-block */
@@ -63,16 +65,17 @@ html {
    text-transform: uppercase;
    line-height: 23px;
 }
-
+/*Style Effect to appearance of line-decoration*/
 .menu-navigation a:hover,
 .menu-navigation a:focus {
    color: #f38181;
-   transition-duration: 1.2s;
-  
+   transition-duration: 200ms;
+   border-bottom: 2px solid #f38181;
+  padding-bottom: 10px; 
 }
 
 /*Style Effect to appearance of line*/
-.menu-navigation a:hover::before {
+/* .menu-navigation a:hover::before {
    content: '';
    position: absolute;
    width: 60px;
@@ -86,5 +89,85 @@ html {
    border: 1px solid #f38181;
    top: 30px;
    left: 5px;
-   /* margin: 0 auto; */
+   margin: 0 auto;
+} */
+
+
+
+
+/* Style block services */
+.wrapper {
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   /* background-color: grey; */
+}
+
+/* Style title h2+p */
+.title {
+   text-align: center;
+   width: 380px;
+   margin: 0 auto;
+   padding: 65px 0;
+}
+
+/* Style block box with icon */
+.services-box {
+   width: 380px;
+   height: 70px;
+   display: flex;
+   /* margin-bottom: 90px; */
+}
+/* Задаем боксам margin-bottom: 90px, кроме 3-х нижних  */
+.services-box:not(:nth-child(n+4)) {
+   margin-bottom: 90px;
+}
+
+/* Вставляю иконки через псевдоэлементы в пустой блок services-icon */
+.services-icon {
+   height: 70px;
+   width: 80px;
+}
+.services-icon::before {
+   content: '';
+   display: block;
+   width: 30px;
+   height: 30px;
+   margin: 0 20px;
+}
+
+/* Вставляем сами icon через псевдо ::before*/
+.icon-alarm::before {
+   background: url("../img/icon/ALARM.png") no-repeat center;
+}
+.icon-line::before {
+   background: url("../img/icon/LINE\ GRAPH.png") no-repeat center;
+}
+.icon-computer::before {
+   background: url("../img/icon/COMPUTER\ _\ OK.png") no-repeat center;
+}
+.icon-book::before {
+   background: url("../img/icon/BOOK\ 2.png") no-repeat center;
+}
+.icon-home::before {
+   background: url("../img/icon/HOME.png") no-repeat center;
+}
+.icon-image::before {
+   background: url("../img/icon/IMAGE.png") no-repeat center;
+}
+
+
+
+
+
+
+
+
+/* Stilization just text of box-block */
+.services-text {
+width: 300px;
+}
+.services-text h3{
+   text-transform: uppercase;
+   margin-bottom: 20px;
 }
