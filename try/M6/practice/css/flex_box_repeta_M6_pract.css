@@ -1,18 +1,10 @@
 html {
   box-sizing: border-box;
 }
-
 *,
 *::before,
 *::after {
   box-sizing: inherit;
-}
-
-body {
-  font-family: 'Raleway', 'Arial', sans-serif;
-  color: #6c7279;
-  font-size: 14px;
-  line-height: 21px;
 }
 
 img {
@@ -21,101 +13,134 @@ img {
   height: auto;
 }
 
-.container {
-  width: 1170px;
-  margin: 0 auto;
+body {
+  font-family: "Raleway", "Arial",sans-serif;
+  color: #6c7279;
+  font-size: 14px;
+  line-height: 21px;
 }
 
+.visually-hidden:not(:focus):not(:active), input[type="checkbox"].visually-hidden, input[type="radio"].visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+
+/* width container */
+.container{
+   width: 1170px;
+   /* background-color:teal; */
+   margin: 0 auto;
+}
+
+
+
+
+/* Style Menu */
 .page-header {
   background-color: #3a3e64;
   box-shadow: 0 5px 4px rgba(0, 0, 0, 0.25);
+  /* Banner будет иметь отступ 120px */
+  /* margin-bottom: 200px; */
 }
 
+/* Задаем внутренние отступы для увеления блока header-меню +  display: flex для размещения по вертикали блоков...align-items: center выравниваем блоки по центру */
 .page-nav {
-  display: flex;
   justify-content: space-between;
-  align-items: center;
+  display: flex;
   min-height: 100px;
+  align-items: center;
 }
-
+/*Задаем display: inline-block; для (.site-logo  и .site-navigation), что бы все разместилось в одну строку*/
 .site-logo {
   display: inline-block;
-  animation: logo-appear 1s linear;
+  /* vertical-align: middle; */
 }
 
-@keyframes logo-appear {
-  0% {
-    transform: translateY(-200px);
-    opacity: 0;
-  }
-
-  50% {
-    transform: translateY(0);
-    opacity: 1;
-    transform: rotate(0);
-  }
-
-  100% {
-    transform: rotate(360deg);
-  }
-}
-
-/* site navigation */
+/* меню + display: flex для размещения по вертикали блоков*/
 .site-navigation {
   display: flex;
   justify-content: space-between;
   width: 600px;
-  margin: 0;
-  padding: 0;
   font-size: 13px;
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .site-navigation a {
-  display: block;
-  color: #ffffff;
-  font-weight: 700;
-  text-transform: uppercase;
-  text-decoration: none;
-  line-height: 16px;
-  transition: color 0.2s linear;
+color: white;
+font-weight: 700;
+text-transform: uppercase;
+text-decoration: none;
+line-height: 16px;
 }
-
+/* Задаем фокус и выделение на нашей ссылку а */
 .site-navigation a:hover,
 .site-navigation a:focus {
   color: #e84545;
 }
+.site-navigation li:first-child a {
+  color: blue;   
+}
 
-/* BANNER */
+/* Banner */
 .banner {
-  display: flex;
-  justify-content: center;
+  /* Задаем данные свойства display: flex;
   align-items: center;
+  justify-content: center;, что бы если убрать клас "container" в блоке banner,то слайдер был по центру*/
+  display: flex;
+  align-items: center;
+  justify-content: center;
   min-height: 600px;
   margin-bottom: 120px;
-
-  background-image: linear-gradient(
-      to right,
-      rgba(239, 59, 54, 0.3),
-      rgba(255, 255, 255, 0.3)
-    ),
-    linear-gradient(to top, rgba(0, 210, 255, 0.3), rgba(145, 140, 170, 0.3)),
-    url('../img/banner.jpeg');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+  background: linear-gradient( to right,
+   rgba(255, 0, 0, 0.3),
+    rgba(0, 0, 255, 0.3)),
+  linear-gradient( to top,
+   rgba(0, 210, 250, 0.3),
+    rgba(145, 140, 170, 0.3)),
+  url(../img/banner.jpeg) no-repeat center/ cover;
 }
 
 .slider {
-  height: 150px;
-  background-color: #fff;
+  width: 500px;
+  height: 100px;
+  background-color: teal;
 }
 
-/* FEATURES SECTION */
+  /* background-size: cover; */
+
+  
+  /* Again try Gridient-linear */
+  /* background: linear-gradient( to left ,rgba(108, 114, 121, 0.3), rgba( 30, 130, 0, 0.4)
+  ),
+  url(../img/banner.jpeg) no-repeat center / cover; */
+
+
+
+
+
+
+
+/* Style block Features */
+/* Задаем нижний отступ именно секции для гибкости, а не внутренним элементам */
 .features {
   margin-bottom: 120px;
 }
 
+/* С помощью display: flex размещаем блоки по вертикале, а flex-wrap: wrap помогает им перейти на другой уровень */
 .features-list {
   display: flex;
   flex-wrap: wrap;
@@ -123,201 +148,201 @@ img {
   list-style: none;
   margin: 0;
   padding: 0;
-}
+  /* background-color: black; */
 
+}
 .features-list-item {
+  /* width: 370px; */
+  /* Вмсето  flex-grow: 0;
+  flex-shrink: 0;  и flex-basis: 370px;*/
   flex: 0 0 370px;
   margin-bottom: 72px;
-  padding: 0 38px;
-  text-align: center;
+  text-align: center;  
+  /* background-color: teal; */
 }
 
-.features-list-item:nth-last-child(-n + 3) {
+/* Задаем трем последним li маржин-ботом:0 */
+.features-list-item:nth-last-child(-n+3) {
   margin-bottom: 0;
 }
 
+/* Другой вариант задать всем .features-list-item маржин-райт:30, кроме каждого 3-го */
+/* .features-list-item:not(:nth-child(3n)) {
+  margin-right: 30px;
+} */
+
+
+/* Стилизируем иконки с помощью псевдоелементов */
+/* [class*="item"]::before */
 .features-list-item::before {
   content: '';
   display: block;
+  /* width: 100%; */
   height: 60px;
   margin-bottom: 34px;
-  background-repeat: no-repeat;
-  background-position: center;
 }
-
+/* Добавляем иконки с помощью псевдоелементов */
 .icon-tools::before {
-  background-image: url('../img/icons/features/icon-tools.png');
+  background: url("../img/icons/features/icon-tools.png") no-repeat center;
 }
-
 .icon-computer::before {
-  background-image: url('../img/icons/features/icon-computer.png');
+  background: url("../img/icons/features/icon-computer.png") no-repeat center;
 }
-
 .icon-bulb::before {
-  background-image: url('../img/icons/features/icon-bulb.png');
+  background: url("../img/icons/features/icon-bulb.png") no-repeat center;
 }
-
 .icon-atom::before {
-  background-image: url('../img/icons/features/icon-atom.png');
+  background: url("../img/icons/features/icon-atom.png") no-repeat center;
 }
-
 .icon-case::before {
-  background-image: url('../img/icons/features/icon-case.png');
+  background: url("../img/icons/features/icon-case.png") no-repeat center;
 }
-
 .icon-download::before {
-  background-image: url('../img/icons/features/icon-download.png');
+  background: url("../img/icons/features/icon-download.png") no-repeat center;
 }
 
+/* стилизируем текст */
 .features-list-item h3 {
   margin-bottom: 24px;
-  margin-top: 0;
+  font-size: 14px;
   color: #2d3033;
   line-height: 17px;
+}
+.features-list-item p{
   font-size: 14px;
 }
 
-.features-list-item p {
-  margin: 0;
-  font-size: 14px;
-}
 
-/* TEAM SECTION */
-.team {
+
+/* Style block Team */
+.team{
   margin-bottom: 120px;
 }
-
 .team-list {
   display: flex;
   justify-content: space-between;
-  padding: 0;
-  margin: 0;
   list-style: none;
+  margin: 0;
+  padding: 0;
+  font-size: 0;
 }
 
+/* за счет padding: 10px;
+  box-shadow: сделали эфект наведения на карточку */
 .team-list-item {
-  flex: 0 0 270px;
-  padding: 5px;
+  width: 270px;
+  padding: 10px;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-  transition: transform 0.2s ease-in, box-shadow 0.3s linear;
-}
-
+} 
 .team-list-item:hover {
-  transform: scale(1.05);
   box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 }
 
+.team-list-item:hover img {
+  filter:grayscale(0.3);
+}
+
+/* Filter for image */
+/* задали всем картинкам-команды серый фон */
 .team-list-image {
-  filter: grayscale(1);
-  transition: filter 0.2s ease-out;
+filter:grayscale(1);
 }
+/* При наведение за счет hover возвращается реальный вид */
+/* .team-list-image:hover {
+  filter:grayscale(0); 
+} */
 
-.team-list-item:hover .team-list-image {
-  filter: grayscale(0.3);
 }
-
+/* Style text */
 .team-list-name {
-  margin-top: 26px;
-  margin-bottom: 10px;
   font-size: 22px;
   line-height: 26px;
   color: #2d3033;
 }
-
 .team-list-occupation {
-  margin-top: 0;
-  margin-bottom: 26px;
   font-size: 13px;
   line-height: 16px;
-  color: #e84545;
   text-transform: uppercase;
+  color: #e84545;
 }
-
 .team-list-about {
-  margin-bottom: 26px;
-  margin-top: 0;
   font-size: 14px;
 }
 
-.team-list-socials {
+
+/* style baseline */
+.team-list-social {
   display: flex;
-  margin: 0;
-  padding: 0;
-  list-style: none;
+margin: 0;
+padding: 0;
+list-style: none;
+font-size: 14px;
 }
 
-.team-list-socials li {
+.team-list-social li{
   margin-right: 4px;
 }
-
-.team-list-socials li:last-child {
+.team-list-social li:last-child {
   margin-right: 0;
 }
 
-.team-list-socials a {
+/* Задаем параметры иконкам сылкам соц сетей */
+.team-list-social a {
   display: block;
   width: 40px;
   height: 40px;
-  border: 1px solid rgb(232, 236, 238);
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgb(232, 236, 238);
+  /* border: 1px solid rgb(232, 236, 238); */
+
+  /* Property for the icon */
   background-repeat: no-repeat;
   background-position: center;
-  transition: background-color 0.2s linear;
 }
-
-.team-list-socials a:hover,
-.team-list-socials a:focus {
+.team-list-social a:hover,
+.team-list-social a:focus {
   background-color: #e84545;
 }
 
+/* Put the icon */
 .icon-facebook {
-  background-image: url('../img/icons/social/icon-facebook.png');
+  background-image: url("../img/icons/social/icon-facebook.png");
 }
-
 .icon-twitter {
-  background-image: url('../img/icons/social/icon-twitter.png');
+  background-image: url("../img/icons/social/icon-twitter.png");
 }
-
 .icon-linkedin {
-  background-image: url('../img/icons/social/icon-linkedin.png');
+  background-image: url("../img/icons/social/icon-linkedin.png");
 }
 
+
+
+/* Footer */
 .page-footer {
-  color: #fff;
+  /* display: flex;
+  justify-content: space-between; */
   background-color: #3a3e64;
+  color: #ffffff;
 }
 
+/* Задаем такой клас, что бы непосредственно внетренним элементам в container применялись эти свойства */
 .page-footer .container {
   display: flex;
   justify-content: space-between;
-  align-items: center;
   min-height: 246px;
+  align-items: center;
 }
 
 .download-button {
   border: none;
   margin: 0;
-  padding: 14px 82px;
+  padding: 18px 82px;
   background-color: #e84545;
   font-size: 13px;
   line-height: 21px;
   font-weight: 600;
-  color: #ffffff;
   text-transform: uppercase;
+  color: #ffffff;
   cursor: pointer;
-}
-
-/* visually-hidden helper */
-.visually-hidden:not(:focus):not(:active),
-input[type='checkbox'].visually-hidden,
-input[type='radio'].visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
 }
