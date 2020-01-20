@@ -217,6 +217,7 @@ width: 300px;
 }
 
 
+
 /* Style block team!!!!! */
 /* Задаю всему блоку отступ вниз*/
 .team {
@@ -226,7 +227,7 @@ width: 300px;
 .team-block {
    display: flex;
    justify-content: space-between;
-   text-align: center;
+   text-align: center; 
 }
 
 /* Style text <p> with class="team-lorem" */
@@ -241,6 +242,50 @@ width: 300px;
    text-align: center;
    margin-bottom: 90px;
 }
+
+/* Cтилизирую эффект наведения на картинки */
+.modal-backdrop {
+   position: fixed;
+   width: 380px;
+   height: 470px;
+   z-index: 1;
+   background-color: rgba(255, 255, 255, 0.603);
+}
+/* .but-card {
+   position: absolute;
+   width: 380px;
+   height: 470px;
+   background-color: red;
+} */
+/* .team-box img {
+   -webkit-transition: all 0.3s ease;
+   background-color:rgba(142,96,15,1)
+} */
+.team-box:hover img {
+   transition: all 200ms linear;
+   box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+   /* filter:grayscale(1); */
+   /* transition: all 0.3s ease; */
+   background: linear-gradient( to right,
+    rgba(255, 0, 0, 0.3),
+     rgba(0, 0, 255, 0.3)),
+}
+
+ .team-box:hover .modal-backdrop {
+   display: block;
+   position: absolute;
+   margin-top: 10px;
+   margin-left: 10px;
+   /* width: 235px;
+   height: 260px; */
+   background-color: red;
+   opacity: 0.9;
+   cursor: default;
+ }
+
+
+
+
 
 /* Style text team-box */
 .team-box h3{
