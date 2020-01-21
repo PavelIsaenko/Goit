@@ -1,86 +1,84 @@
 html {
-   box-sizing: border-box;
-   /* width: 1600px; */
- }
- 
- *,
- *::before,
- *::after {
-   box-sizing: inherit;
- }
- 
- @font-face {
-   font-family: 'RobotoItalic';
-src: url('../fonts/Roboto-Italic.ttf') format('truetype');
-font-weight: 300;
+  box-sizing: border-box;
+  /* width: 1600px; */
 }
 
- img {
-   display: block;
-   max-width: 100%;
-   height: auto;
- }
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+@font-face {
+  font-family: "RobotoItalic";
+  src: url("../fonts/Roboto-Italic.ttf") format("truetype");
+  font-weight: 300;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
 
 .container {
-   width: 1200px;
-   height: auto;
-   /* background-color: grey; */
-   margin: 0 auto; 
-   /* padding-bottom: 90px; */
+  width: 1200px;
+  height: auto;
+  /* background-color: grey; */
+  margin: 0 auto;
+  /* padding-bottom: 90px; */
 }
-
 
 /* Style Header */
 .menu {
-   display: flex;
-   flex-direction: row;
-   justify-content: space-between;
-   padding: 30px 0;
-   margin-bottom: 35px;
-   /* background-color: yellow; */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 30px 0;
+  margin-bottom: 35px;
+  /* background-color: yellow; */
 }
-
 
 /* Style menu-nav */
 .menu-navigation {
-   height: 23px;
-   display: flex;
-   width: 490px;
-   flex-direction: row;
-   justify-content: space-between;
-   /* align-items: center; */
-   /* vertical-align: middle; */
+  height: 23px;
+  display: flex;
+  width: 490px;
+  flex-direction: row;
+  justify-content: space-between;
+  /* align-items: center; */
+  /* vertical-align: middle; */
 }
 
 .menu-navigation li {
-   height: 23px;
-   width: auto;
-   margin: 0;
-   padding: 0;
-   /* align-items: center; */
-   /* vertical-align: middle; */
+  height: 23px;
+  width: auto;
+  margin: 0;
+  padding: 0;
+  /* align-items: center; */
+  /* vertical-align: middle; */
 }
 
 /* Style link-block */
 .menu-navigation a {
-   position: relative;
-   display: block;
-   text-align: center;
-   font-family: 'Montserrat', sans-serif;
-   font-size: 14px;
-   color: #b0e9de;
-   text-decoration: none;
-   font-weight: 500;
-   text-transform: uppercase;
-   line-height: 23px;
+  position: relative;
+  display: block;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  color: #b0e9de;
+  text-decoration: none;
+  font-weight: 500;
+  text-transform: uppercase;
+  line-height: 23px;
 }
 /*Style Effect to appearance of line-decoration*/
 .menu-navigation a:hover,
 .menu-navigation a:focus {
-   color: #f38181;
-   transition: all 200ms linear;
-   border-bottom: 2px solid #f38181;
-  padding-bottom: 10px; 
+  color: #f38181;
+  transition: all 200ms linear;
+  border-bottom: 2px solid #f38181;
+  padding-bottom: 10px;
 }
 
 /*Style Effect to appearance of line*/
@@ -101,206 +99,289 @@ font-weight: 300;
    margin: 0 auto;
 } */
 
-
-
-
 /* Style block services !!!!!*/
 .services {
-   padding-bottom: 30px;
+  padding-bottom: 30px;
 }
 .wrapper {
-   margin-top: 30px;
-   display: flex;
-   flex-direction: row;
-   flex-wrap: wrap;
-   /* background-color: grey; */
+  margin-top: 30px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  /* background-color: grey; */
 }
 
 /* Style title h2+p */
 .title {
-   text-align: center;
-   width: 380px;
-   margin: 0 auto;
-   padding: 65px 0;
-   color: #333333;
-   /* margin-bottom: 40px; */
+  text-align: center;
+  width: 380px;
+  margin: 0 auto;
+  padding: 65px 0;
+  color: #333333;
+  /* margin-bottom: 40px; */
 }
 .title h2 {
-   font-size: 30px;
-   font-family: 'Montserrat', sans-serif;
-   font-weight: 700;
-   text-transform: uppercase;
-   position: relative;
+  font-size: 30px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  position: relative;
 }
 .title h2::after {
-   content: '';
-   position: absolute;
-   width: 60px;
-   height: 4px;
-   background-color: #f38181;
-   top: 55px;
-   /* Эти 3-ри свойства left: 0;
+  content: "";
+  position: absolute;
+  width: 60px;
+  height: 4px;
+  background-color: #f38181;
+  top: 55px;
+  /* Эти 3-ри свойства left: 0;
    right: 0;
    margin: 0 auto - задают центрирование для полоски при  position: absolute; */
-   left: 0;
-   right: 0;
-   margin: 0 auto;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
 }
 .title p {
-font-size: 24px;
-font-family: 'Kaushan Script', cursive;
-font-weight: 500;
-margin-bottom: 35px;
+  font-size: 24px;
+  font-family: "Kaushan Script", cursive;
+  font-weight: 500;
+  margin-bottom: 35px;
 }
-
 
 /* Style block box with icon */
 .services-box {
-   width: 380px;
-   height: 70px;
-   display: flex;
-   /* margin-bottom: 90px; */
+  width: 380px;
+  height: 70px;
+  display: flex;
+  /* margin-bottom: 90px; */
 }
 /* Задаем боксам margin-bottom: 90px, кроме 3-х нижних  */
-.services-box:not(:nth-child(n+4)) {
-   margin-bottom: 90px;
+.services-box:not(:nth-child(n + 4)) {
+  margin-bottom: 90px;
 }
 /* Вставляю иконки через псевдоэлементы в пустой блок services-icon */
 .services-icon {
-   height: 70px;
-   width: 80px;
+  height: 70px;
+  width: 80px;
 }
 .services-icon::before {
-   content: '';
-   display: block;
-   width: 30px;
-   height: 30px;
-   margin: 0 20px;
+  content: "";
+  display: block;
+  width: 30px;
+  height: 30px;
+  margin: 0 20px;
 }
 /* Вставляем сами icon через псевдо ::before*/
 .icon-alarm::before {
-   background: url("../img/icon/ALARM.png") no-repeat center;
+  background: url("../img/icon/ALARM.png") no-repeat center;
 }
 .icon-line::before {
-   background: url("../img/icon/LINE\ GRAPH.png") no-repeat center;
+  background: url("../img/icon/LINE\ GRAPH.png") no-repeat center;
 }
 .icon-computer::before {
-   background: url("../img/icon/COMPUTER\ _\ OK.png") no-repeat center;
+  background: url("../img/icon/COMPUTER\ _\ OK.png") no-repeat center;
 }
 .icon-book::before {
-   background: url("../img/icon/BOOK\ 2.png") no-repeat center;
+  background: url("../img/icon/BOOK\ 2.png") no-repeat center;
 }
 .icon-home::before {
-   background: url("../img/icon/HOME.png") no-repeat center;
+  background: url("../img/icon/HOME.png") no-repeat center;
 }
 .icon-image::before {
-   background: url("../img/icon/IMAGE.png") no-repeat center;
+  background: url("../img/icon/IMAGE.png") no-repeat center;
 }
 
 /* Stilization just text of box-block */
 .services-text {
-width: 300px;
+  width: 300px;
 }
-.services-text h3{
-   text-transform: uppercase;
-   margin-bottom: 20px;
-   font-family: 'Montserrat', sans-serif;
-   font-size: 14px;
-   color: #181818;
-   font-weight: 500;
+.services-text h3 {
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  color: #181818;
+  font-weight: 500;
 }
 .services-text p {
-   font-family: 'Roboto', sans-serif;
-   font-size: 15px;
-   color: #b3b3b3;
-   line-height: 24px;
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  color: #b3b3b3;
+  line-height: 24px;
 }
-
-
 
 /* Style block team!!!!! */
 /* Задаю всему блоку отступ вниз*/
 .team {
-   padding-bottom: 85px;
+  padding-bottom: 85px;
 }
 /* Стилизую (размещаю блоки) в блоке */
 .team-block {
-   display: flex;
-   justify-content: space-between;
-   text-align: center; 
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
 }
 
 /* Style text <p> with class="team-lorem" */
-.team-lorem{
-   width: 960px;
-   height: 40px;
-   margin: 0 auto;
-   font-size: 15px;
-   font-family: 'Roboto', sans-serif;
-   color: #999999;
-   line-height: 24px;
-   text-align: center;
-   margin-bottom: 90px;
+.team-lorem {
+  width: 960px;
+  height: 40px;
+  margin: 0 auto;
+  font-size: 15px;
+  font-family: "Roboto", sans-serif;
+  color: #999999;
+  line-height: 24px;
+  text-align: center;
+  margin-bottom: 90px;
 }
-
-/* Cтилизирую эффект наведения на картинки */
-.modal-backdrop {
-   position: fixed;
-   width: 380px;
-   height: 470px;
-   z-index: 1;
-   background-color: rgba(255, 255, 255, 0.603);
-}
-/* .but-card {
-   position: absolute;
-   width: 380px;
-   height: 470px;
-   background-color: red;
-} */
-/* .team-box img {
-   -webkit-transition: all 0.3s ease;
-   background-color:rgba(142,96,15,1)
-} */
-.team-box:hover img {
-   transition: all 200ms linear;
-   box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
-   /* filter:grayscale(1); */
-   /* transition: all 0.3s ease; */
-   background: linear-gradient( to right,
-    rgba(255, 0, 0, 0.3),
-     rgba(0, 0, 255, 0.3)),
-}
-
- .team-box:hover .modal-backdrop {
-   display: block;
-   position: absolute;
-   margin-top: 10px;
-   margin-left: 10px;
-   /* width: 235px;
-   height: 260px; */
-   background-color: red;
-   opacity: 0.9;
-   cursor: default;
- }
-
-
-
-
 
 /* Style text team-box */
-.team-box h3{
+.team-box h3 {
    margin: 30px 0 10px;
    font-size: 15px;
-   font-family: 'Montserrat', sans-serif;
+   font-family: "Montserrat", sans-serif;
    text-transform: uppercase;
    color: #333333;
    font-weight: 500;
-}
-.team-box p {
+ }
+ .team-box p {
    font-size: 15px;
-   font-family: 'RobotoItalic';
+   font-family: "RobotoItalic";
    line-height: 24px;
    color: #9f9f9f;
+ }
+
+
+/* Cтилизирую эффект наведения на картинки */
+/* Style img-картинки через css */
+.img {
+  position: relative;
+  width: 380px;
+  height: 470px;
+  display: block;
+}
+/* Даем путь к самой картинке */
+.img-ochkarik {
+   background: url("../img/img_1.png") no-repeat;
+}
+.img-photograph {
+   background: url("../img/img_2.png") no-repeat;
+}
+.img-borodach {
+   background: url("../img/img_3.png") no-repeat;
+}
+.img:after {
+  content: "";
+  display: block;
+  height: 100%;
+  opacity: 0.7;
+  /* background-color: #fff; */
+  transition: background-color 200ms linear;
+}
+.img:hover:after {
+  background-color: rgb(149, 225, 211, 0.5);
+}
+/* Задаю параметры(цвет) сдвинутому фону */
+.img:before {
+  content: "";
+  display: block;
+  position: absolute;
+  transition: background-color 200ms linear;
+  opacity: 0.9;
+  cursor: default;
+}
+.img:hover:before {
+  margin-top: -10px;
+  margin-left: -10px;
+  width: 380px;
+  height: 470px;
+  opacity: 0.9;
+  background-image: linear-gradient(to bottom, #ee8989, #f5b78e, #f1d589);
+}
+
+/* Стилизируем модальное окно с иконками */
+.modal-backdrop {
+   position: fixed;
+   /* width: 380px;
+   height: 470px; */
+   display: none;
+ }
+.but-card {
+  position: absolute;
+  width: 380px;
+  height: 470px;
+  /* Выравниваем иконки за счет  display: flex; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* background-color: red; */
+}
+/* Эффект наведения modal-backdrop через блок "img"*/
+.img:hover .modal-backdrop {
+  display: block;
+  position: absolute;
+  cursor: default;
+  z-index: 1;
+}
+
+/* Добовляем иконки */
+.but-img {
+   height: 55px;
+   width: 55px;
+   transition: background-color 200ms linear;
+   cursor: pointer;
+   margin-right: 0.4%;
+} 
+
+.but-img:nth-child(1) {
+   background: url(../img/facebook.png) center no-repeat;
+   transition: background-color 200ms linear;
+   background-color: rgb(252, 227, 138,1);
+   height: 55px;
+   width: 55px;
+   border: none;
+   opacity: 1;
+}
+/* При наведении меняем "background-color" иконки */
+.but-img:nth-child(1):hover {
+   transition: background-color 200ms linear;
+   background-color: #95e1d3;
+}
+.but-img:nth-child(2) {
+   background: url(../img/twitter.png) center no-repeat;
+   background-color: #fce38a;
+   height: 55px;
+   width: 55px;
+   border: none;
+   opacity: 1;
+}
+.but-img:nth-child(2):hover {
+   transition: background-color 200ms linear;
+   background-color: #95e1d3;
+}
+.but-img:nth-child(3) {
+   background: url(../img/pinterest.png) center no-repeat;
+   background-color: #fce38a;
+   height: 55px;
+   width: 55px;
+   border: none;
+   opacity: 1;
+}
+.but-img:nth-child(3):hover {
+   transition: background-color 200ms linear;
+   background-color: #95e1d3;
+}
+.but-img:nth-child(4) {
+   background: url(../img/instagram.png) center no-repeat;
+   background-color: #fce38a;
+   height: 55px;
+   width: 55px;
+   border: none;
+   opacity: 1;
+}
+.but-img:nth-child(4):hover {
+   transition: background-color 200ms linear;
+   background-color: #95e1d3;
 }
 
 
@@ -308,61 +389,61 @@ width: 300px;
 
 /* Style footer-baseline */
 .footer {
-   height: 60px;
-   display: flex;
-   justify-content: space-between;
-   align-items: center;
-   border-top: 1px solid #d9d9d9;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid #d9d9d9;
 }
 
 .baseline-item {
-   display: flex;
-   justify-content: space-between;
-   width: 300px;
+  display: flex;
+  justify-content: space-between;
+  width: 300px;
 }
-.baseline-item a{
-    text-decoration: none;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 14px;
-    font-weight: 500;
-    color: #333333;
+.baseline-item a {
+  text-decoration: none;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  color: #333333;
 }
 .baseline-item a:hover {
-   color: #f38181;
-   transition: all 200ms linear;
+  color: #f38181;
+  transition: all 200ms linear;
 }
 
 /* Style button form */
 .form {
-   margin: 0;
-   padding: 0;
-   display: flex;
+  margin: 0;
+  padding: 0;
+  display: flex;
 }
 
 /* Style search butn */
 .baseline-search {
-   width: 230px;
-   height: 40px;
-   padding: 10px;
-   font-size: 14px;
-   font-family: 'RobotoItalic';
-   border: 1px solid #d9d9d9;
+  width: 230px;
+  height: 40px;
+  padding: 10px;
+  font-size: 14px;
+  font-family: "RobotoItalic";
+  border: 1px solid #d9d9d9;
 }
 /*Задаем серый цвет тексту placeholder="Your Email..."    */
 input[type="search"]::placeholder {
-   color: #d9d9d9;
-   }  
+  color: #d9d9d9;
+}
 
 /* Style butn submit */
 .baseline-sub {
-   width: 150px;
-   height: 40px;
-   background-color: #95e1d3;
-   color: #ffffff;
-   font-size: 14px;
-   font-weight: 700;
-   text-transform: uppercase;
-   font-family: 'Montserrat', sans-serif;
-   border: 1px solid #95e1d3;
-   cursor: pointer;
+  width: 150px;
+  height: 40px;
+  background-color: #95e1d3;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
+  border: 1px solid #95e1d3;
+  cursor: pointer;
 }
