@@ -134,9 +134,9 @@ img {
   height: 4px;
   background-color: #f38181;
   top: 55px;
-  /* Р­С‚Рё 3-СЂРё СЃРІРѕР№СЃС‚РІР° left: 0;
+  /* Эти 3-ри свойства left: 0;
    right: 0;
-   margin: 0 auto - Р·Р°РґР°СЋС‚ С†РµРЅС‚СЂРёСЂРѕРІР°РЅРёРµ РґР»СЏ РїРѕР»РѕСЃРєРё РїСЂРё  position: absolute; */
+   margin: 0 auto - задают центрирование для полоски при  position: absolute; */
   left: 0;
   right: 0;
   margin: 0 auto;
@@ -155,11 +155,11 @@ img {
   display: flex;
   /* margin-bottom: 90px; */
 }
-/* Р—Р°РґР°РµРј Р±РѕРєСЃР°Рј margin-bottom: 90px, РєСЂРѕРјРµ 3-С… РЅРёР¶РЅРёС…  */
+/* Задаем боксам margin-bottom: 90px, кроме 3-х нижних  */
 .services-box:not(:nth-child(n + 4)) {
   margin-bottom: 90px;
 }
-/* Р’СЃС‚Р°РІР»СЏСЋ РёРєРѕРЅРєРё С‡РµСЂРµР· РїСЃРµРІРґРѕСЌР»РµРјРµРЅС‚С‹ РІ РїСѓСЃС‚РѕР№ Р±Р»РѕРє services-icon */
+/* Вставляю иконки через псевдоэлементы в пустой блок services-icon */
 .services-icon {
   height: 70px;
   width: 80px;
@@ -171,7 +171,7 @@ img {
   height: 30px;
   margin: 0 20px;
 }
-/* Р’СЃС‚Р°РІР»СЏРµРј СЃР°РјРё icon С‡РµСЂРµР· РїСЃРµРІРґРѕ ::before*/
+/* Вставляем сами icon через псевдо ::before*/
 .icon-alarm::before {
   background: url("../img/icon/ALARM.png") no-repeat center;
 }
@@ -211,11 +211,11 @@ img {
 }
 
 /* Style block team!!!!! */
-/* Р—Р°РґР°СЋ РІСЃРµРјСѓ Р±Р»РѕРєСѓ РѕС‚СЃС‚СѓРї РІРЅРёР·*/
+/* Задаю всему блоку отступ вниз*/
 .team {
   padding-bottom: 85px;
 }
-/* РЎС‚РёР»РёР·СѓСЋ (СЂР°Р·РјРµС‰Р°СЋ Р±Р»РѕРєРё) РІ Р±Р»РѕРєРµ */
+/* Стилизую (размещаю блоки) в блоке */
 .team-block {
   display: flex;
   justify-content: space-between;
@@ -252,15 +252,15 @@ img {
  }
 
 
-/* CС‚РёР»РёР·РёСЂСѓСЋ СЌС„С„РµРєС‚ РЅР°РІРµРґРµРЅРёСЏ РЅР° РєР°СЂС‚РёРЅРєРё */
-/* Style img-РєР°СЂС‚РёРЅРєРё С‡РµСЂРµР· css */
-.img{
+/* Cтилизирую эффект наведения на картинки */
+/* Style img-картинки через css */
+.img {
   position: relative;
   width: 380px;
   height: 470px;
   display: block;
 }
-/* Р”Р°РµРј РїСѓС‚СЊ Рє СЃР°РјРѕР№ РєР°СЂС‚РёРЅРєРµ */
+/* Даем путь к самой картинке */
 .img-ochkarik {
    background: url("../img/img_1.png") no-repeat;
 }
@@ -279,9 +279,9 @@ img {
   transition: background-color 200ms linear;
 }
 .img:hover:after {
-  background-color: rgb(149, 225, 211, 0.7);
+  background-color: rgb(149, 225, 211, 0.5);
 }
-/* Р—Р°РґР°СЋ РїР°СЂР°РјРµС‚СЂС‹(С†РІРµС‚) СЃРґРІРёРЅСѓС‚РѕРјСѓ С„РѕРЅСѓ */
+/* Задаю параметры(цвет) сдвинутому фону */
 .img:before {
   content: "";
   display: block;
@@ -299,7 +299,7 @@ img {
   background-image: linear-gradient(to bottom, #ee8989, #f5b78e, #f1d589);
 }
 
-/* РЎС‚РёР»РёР·РёСЂСѓРµРј РјРѕРґР°Р»СЊРЅРѕРµ РѕРєРЅРѕ СЃ РёРєРѕРЅРєР°РјРё */
+/* Стилизируем модальное окно с иконками */
 .modal-backdrop {
    position: fixed;
    /* width: 380px;
@@ -310,13 +310,13 @@ img {
   position: absolute;
   width: 380px;
   height: 470px;
-  /* Р’С‹СЂР°РІРЅРёРІР°РµРј РёРєРѕРЅРєРё Р·Р° СЃС‡РµС‚  display: flex; */
+  /* Выравниваем иконки за счет  display: flex; */
   display: flex;
   align-items: center;
   justify-content: center;
   /* background-color: red; */
 }
-/* Р­С„С„РµРєС‚ РЅР°РІРµРґРµРЅРёСЏ modal-backdrop С‡РµСЂРµР· Р±Р»РѕРє "img"*/
+/* Эффект наведения modal-backdrop через блок "img"*/
 .img:hover .modal-backdrop {
   display: block;
   position: absolute;
@@ -324,7 +324,7 @@ img {
   z-index: 1;
 }
 
-/* Р”РѕР±РѕРІР»СЏРµРј РёРєРѕРЅРєРё */
+/* Добовляем иконки */
 .but-img {
    height: 55px;
    width: 55px;
@@ -342,7 +342,7 @@ img {
    border: none;
    opacity: 1;
 }
-/* РџСЂРё РЅР°РІРµРґРµРЅРёРё РјРµРЅСЏРµРј "background-color" РёРєРѕРЅРєРё */
+/* При наведении меняем "background-color" иконки */
 .but-img:nth-child(1):hover {
    transition: background-color 200ms linear;
    background-color: #95e1d3;
@@ -429,7 +429,7 @@ img {
   font-family: "RobotoItalic";
   border: 1px solid #d9d9d9;
 }
-/*Р—Р°РґР°РµРј СЃРµСЂС‹Р№ С†РІРµС‚ С‚РµРєСЃС‚Сѓ placeholder="Your Email..."    */
+/*Задаем серый цвет тексту placeholder="Your Email..."    */
 input[type="search"]::placeholder {
   color: #d9d9d9;
 }

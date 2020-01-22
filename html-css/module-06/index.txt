@@ -120,7 +120,6 @@
         <ul class="team-block">
           <li class="team-box">
             <div class="img img-ochkarik">
-              <!-- <img src="img/img_1.png" alt="Liker"/> -->
               <div class="modal-backdrop">
                 <div class="but-card">
                   <button class="but-img but-img-fc"></button>
@@ -167,7 +166,7 @@
 
     <footer class="footer container">
       <div class="baseline-item">
-        <p><a href="">Â© 2016</a></p>
+        <p><a href="">© 2016</a></p>
         <p><a href="">MoGo</a></p>
         <p><a href="">free</a></p>
         <p><a href="">PSD</a></p>
