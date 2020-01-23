@@ -35,15 +35,14 @@ img {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding: 30px 0;
-  margin-bottom: 35px;
+  padding: 30px 0 35px;
   /* background-color: yellow; */
 }
 
 
 /* Style menu-nav */
 .menu-navigation {
-  height: 23px;
+ height: 23px;
   display: flex;
   width: 490px;
   flex-direction: row;
@@ -53,8 +52,8 @@ img {
 }
 
 .menu-navigation li {
-  height: 23px;
-  width: auto;
+  /* height: 23px;
+  width: auto; */
   margin: 0;
   padding: 0;
   /* align-items: center; */
@@ -123,41 +122,42 @@ img {
   margin: 0 auto;
   padding: 65px 0;
   color: #333333;
-  /* margin-bottom: 40px; */
 }
-.title h2 {
+.title-text {
   font-size: 30px;
   font-family: 'Montserrat', sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   position: relative;
 }
-.title h2::after {
+.title-text::after {
   content: '';
-  position: absolute;
+  display: block;
+  /* position: absolute; */
   width: 60px;
   height: 4px;
   background-color: #f38181;
-  top: 55px;
-  /* Эти 3-ри свойства left: 0;
-  right: 0;
-  margin: 0 auto - задают центрирование для полоски при  position: absolute; */
   left: 0;
   right: 0;
   margin: 0 auto;
+  margin-top: 45px;
+  /* Эти 3-ри свойства left: 0;
+  right: 0;
+  margin: 0 auto - задают центрирование для полоски при  position: absolute; */  
 }
-.title p {
+.title-item {
+  display: block;
 font-size: 24px;
 font-family: 'Kaushan Script', cursive;
 font-weight: 500;
-margin-bottom: 35px;
+margin-bottom: 25px;
 }
 
 
 /* Style block box with icon */
 .services-box {
   width: 380px;
-  height: 70px;
+  /* height: 70px; */
   display: flex;
   /* margin-bottom: 90px; */
 }
@@ -233,7 +233,7 @@ width: 300px;
 /* Style text <p> with class="team-lorem" */
 .team-lorem{
   width: 960px;
-  height: 40px;
+  /* height: 40px; */
   margin: 0 auto;
   font-size: 15px;
   font-family: 'Roboto', sans-serif;
@@ -247,12 +247,10 @@ width: 300px;
 
 
 /* Cтилизирую эффект наведения на картинки */
-
 .modal-box {
   position: relative;
   width: 380px;
   height: 470px;
-
 } 
 
 .but-card {
@@ -269,16 +267,36 @@ width: 300px;
 }
 
 
-/* .modal-box:hover {
-  transition: all 200ms linear;
-  filter: invert(100%);
-} */
-
+/* Делаем активный сдвиг первого фона с иконками соц-сетей при наведении*/
 .modal-box:hover .but-card {
   /* Задаем плавность перехода */
   transition: all 200ms linear;
-  opacity: 0.9;
+  opacity: 0.8;
+  z-index: 2;
 }
+
+
+/* Создаем фон "background-color: #95e1d3;" на картинке и делаем невидимым opacity: 0;*/
+.img-backdrop:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  width: 380px;
+  height: 470px;
+  background-color: #95e1d3;
+  /* transition: 0.2s linear; */
+  opacity: 0;
+}
+
+/* Делаем активное появление заднего фона "background-color: #95e1d3;" за передним фоном с иконкамиБ цвет "teal"*/
+.modal-box:hover .img-backdrop:after {
+  transition: all 200ms linear;
+  opacity: 0.8;
+  z-index: 1;
+}
+
+
 
 
 /* Добовляем иконки */
@@ -288,8 +306,8 @@ width: 300px;
   transition: background-color 200ms linear;
   cursor: pointer;
   margin-right: 0.4%;
+  opacity: 0.4;
 } 
-
 .but-img:nth-child(1) {
   background: url(../img/facebook.png) center no-repeat;
   transition: background-color 200ms linear;
