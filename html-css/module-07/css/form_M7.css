@@ -1,0 +1,174 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+/* Подключение шрифтов */
+@font-face {
+  font-family: 'MontserratRegular';
+src: url('../fonts/Montserrat-Regular.woff') format('truetype');
+font-weight: 400;
+}
+@font-face {
+  font-family: 'MontserratBold';
+src: url('../fonts/Montserrat-Bold.woff') format('truetype');
+font-weight: 700;
+}
+@font-face {
+  font-family: 'DroidItalic';
+src: url('../fonts/DroidSerif-Italic-webfont.woff') format('truetype');
+font-weight: 500;
+}
+@font-face {
+  font-family: 'RobotoSlab';
+src: url('../fonts/RobotoSlab-Regular-webfont.woff') format('truetype');
+font-weight: 500;
+}
+
+.container {
+  width: 940px;
+  height: auto;
+  /* background-color: grey; */
+  margin: 0 auto;
+}
+
+/* Style Header!!!! */
+.header {
+  padding: 50px 0;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu {
+  width: 490px;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.menu-item a {
+  font-family: 'MontserratBold';
+  text-decoration: none;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #222222;
+}
+.menu-item a:hover,
+.menu-item a:focus {
+  color: #fed443;
+}
+
+
+
+
+/* Style block services!!!! */
+.services {
+  margin: 100px auto;
+  text-align: center;
+
+}
+
+/* Style title text */
+.title-services {
+  font-family: 'MontserratBold';
+  font-size: 40px;
+  text-transform: uppercase;
+  line-height: 75px;
+  font-weight: 700;
+  color: #222222;
+}
+.sub-title {
+  font-family: 'DroidItalic';
+  font-size: 16px;
+  /* text-transform: uppercase; */
+  font-weight: 500;
+  color: #adadad;
+  padding-bottom: 15px;
+}
+
+/* Style block services */
+.services-block {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  margin-top: 40px;
+}
+.services-box {
+  display: block;
+  height: 235px;
+  width: 290px;
+}
+
+/*  Создаем блок иконки внутри "services-box"*/
+.services-box::before {
+  content: "";
+  display: block;
+  height: 74px;
+  margin: 28px 0 25px;
+}
+/* Вставляем сами иконки через псевдоєлементы */
+.services-box_basket::before {
+  background: url(../img/Icon-Basket.png) no-repeat center;
+}
+.services-box_laptop::before {
+  background: url(../img/Icon-Laptop.png) no-repeat center;
+}
+.services-box_locked::before {
+  background: url(../img/Icon-Locked.png) no-repeat center;
+}
+
+/* Cтилизуем текст блока services-block */
+.box-title {
+  font-family: 'MontserratBold';
+  font-size: 18px;
+  margin-bottom: 15px;
+  color: #222222;
+}
+.box-subtitle {
+  font-family: 'RobotoSlab';
+  font-size: 14px;
+  color: #9b9b9b;
+  line-height: 1.5;
+}
+
+
+
+/* Style block-form!!!! */
+.block-form {
+  height: 676px;
+  width: 100%;
+  padding: 60px 0;
+  background: url(../img/Map_Image.png) no-repeat center/cover;
+  text-align: center;
+}
+
+/* Задаем белый цвет title-services */
+.title-services_white {
+  color: #ffffff;
+}
+
+.wrap-form {
+  padding: 50px 0;
+}
