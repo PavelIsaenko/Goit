@@ -15,24 +15,24 @@ img {
 }
 /* Подключение шрифтов */
 @font-face {
-  font-family: 'MontserratRegular';
-src: url('../fonts/Montserrat-Regular.woff') format('truetype');
-font-weight: 400;
+  font-family: "MontserratRegular";
+  src: url("../fonts/Montserrat-Regular.woff") format("truetype");
+  font-weight: 400;
 }
 @font-face {
-  font-family: 'MontserratBold';
-src: url('../fonts/Montserrat-Bold.woff') format('truetype');
-font-weight: 700;
+  font-family: "MontserratBold";
+  src: url("../fonts/Montserrat-Bold.woff") format("truetype");
+  font-weight: 700;
 }
 @font-face {
-  font-family: 'DroidItalic';
-src: url('../fonts/DroidSerif-Italic-webfont.woff') format('truetype');
-font-weight: 500;
+  font-family: "DroidItalic";
+  src: url("../fonts/DroidSerif-Italic-webfont.woff") format("truetype");
+  font-weight: 500;
 }
 @font-face {
-  font-family: 'RobotoSlab';
-src: url('../fonts/RobotoSlab-Regular-webfont.woff') format('truetype');
-font-weight: 500;
+  font-family: "RobotoSlab";
+  src: url("../fonts/RobotoSlab-Regular-webfont.woff") format("truetype");
+  font-weight: 500;
 }
 
 .container {
@@ -66,7 +66,7 @@ font-weight: 500;
   align-items: center;
 }
 .menu-item a {
-  font-family: 'MontserratBold';
+  font-family: "MontserratBold";
   text-decoration: none;
   font-size: 14px;
   text-transform: uppercase;
@@ -77,19 +77,15 @@ font-weight: 500;
   color: #fed443;
 }
 
-
-
-
 /* Style block services!!!! */
 .services {
   margin: 100px auto;
   text-align: center;
-
 }
 
 /* Style title text */
 .title-services {
-  font-family: 'MontserratBold';
+  font-family: "MontserratBold";
   font-size: 40px;
   text-transform: uppercase;
   line-height: 75px;
@@ -97,7 +93,7 @@ font-weight: 500;
   color: #222222;
 }
 .sub-title {
-  font-family: 'DroidItalic';
+  font-family: "DroidItalic";
   font-size: 16px;
   /* text-transform: uppercase; */
   font-weight: 500;
@@ -141,19 +137,17 @@ font-weight: 500;
 
 /* Cтилизуем текст блока services-block */
 .box-title {
-  font-family: 'MontserratBold';
+  font-family: "MontserratBold";
   font-size: 18px;
   margin-bottom: 15px;
   color: #222222;
 }
 .box-subtitle {
-  font-family: 'RobotoSlab';
+  font-family: "RobotoSlab";
   font-size: 14px;
   color: #9b9b9b;
   line-height: 1.5;
 }
-
-
 
 /* Style block-form!!!! */
 .block-form {
@@ -171,4 +165,88 @@ font-weight: 500;
 
 .wrap-form {
   padding: 50px 0;
+}
+
+
+/* Style form */
+.form {
+  display: flex;
+  margin-top: 65px;
+  width: 940px;
+}
+
+.fieldset {
+  display: block;
+  width: 455px;
+}
+.fieldset:nth-child(1) {
+  margin-right: 30px;
+}
+
+input {
+  display: block;
+  width: 455px;
+  height: 50px;
+  border-radius: 3%;
+  outline-style: none;
+}
+/* Задаем цвет валидности для полей ввода */
+input:valid {
+  outline: 1px solid green;
+}
+input:invalid {
+  outline: 1px solid red;
+}
+
+input:not(:nth-child(3)) {
+  margin-bottom: 30px;
+}
+
+textarea {
+  display: block;
+  width: 455px;
+  height: 210px;
+  border-radius: 3%;
+  outline-style: none;
+}
+/* Задаем цвет валидности для полей ввода */
+textarea:valid {
+  outline: 1px solid green;
+}
+textarea:invalid {
+  outline: 1px solid red;
+}
+
+/*Задаем серый цвет тексту placeholder=".....", а также стилизуем его для двух блоков  "fieldset"*/
+input::placeholder {
+  color: #d9d9d9;
+  padding: 20px;
+  font-family: "MontserratBold";
+  font-size: 14px;
+  text-transform: uppercase;
+}
+textarea::placeholder {
+  color: #d9d9d9;
+  padding: 15px;
+  font-family: "MontserratBold";
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+/* Style button */
+.button {
+  display: block;
+  /* margin-top: 30px; */
+  width: 240px;
+  height: 65px;
+  text-align: center;
+  background-color: #fed136;
+  margin: 30px auto;
+  border: 1px solid #fed136;
+  border-radius: 3%;
+  font-family: "MontserratBold";
+  font-size: 18px;
+  text-transform: uppercase;
+  color: #ffffff;
+  cursor: pointer;
 }

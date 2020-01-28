@@ -1,71 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-   <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-   <title>Document</title>
-   <link
-   href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,900&display=swap"
-   rel="stylesheet"
- />
-   <link rel="stylesheet" href="css/normalise.css">
-   <link rel="stylesheet" href="css/reset.css">
-   <link rel="stylesheet" href="css/form_M7.css">
-</head>
-<body>
-<header class="header container">
-  <nav class="nav">
-    <a href="#" class="logo"><img src="img/Logo.png" alt="logo"></a>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/normalise.css" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/form_M7.css" />
+  </head>
+  <body>
+    <header class="header container">
+      <nav class="nav">
+        <a href="#" class="logo"><img src="img/Logo.png" alt="logo"/></a>
 
-    <ul class="menu">
-      <li class="menu-item"><a href="#">HOME</a></li>
-      <li class="menu-item"><a href="#">SERVICES</a></li>
-      <li class="menu-item"><a href="#">PORTFOLIO</a></li>
-      <li class="menu-item"><a href="#">ABOUT</a></li>
-      <li class="menu-item"><a href="#">CONTACT</a></li>
-    </ul>
-  </nav>
-</header>
+        <ul class="menu">
+          <li class="menu-item"><a href="#">HOME</a></li>
+          <li class="menu-item"><a href="#">SERVICES</a></li>
+          <li class="menu-item"><a href="#">PORTFOLIO</a></li>
+          <li class="menu-item"><a href="#">ABOUT</a></li>
+          <li class="menu-item"><a href="#">CONTACT</a></li>
+        </ul>
+      </nav>
+    </header>
 
-<section class="services container">
+    <section class="services container">
+      <div class="title">
+        <h2 class="title-services">Services</h2>
+        <p class="sub-title">Lorem ipsum dolor sit amet consectetur adipis.</p>
+      </div>
 
-  <div class="title">
-    <h2 class="title-services">Services</h2>
-    <p class="sub-title">Lorem ipsum dolor sit amet consectetur adipis.</p>
-  </div>
+      <div class="services-block">
+        <article class="services-box services-box_basket">
+          <h3 class="box-title">E-Commerce</h3>
+          <p class="box-subtitle">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio
+            tenetur deserunt nostrum eligendi.
+          </p>
+        </article>
+        <article class="services-box services-box_laptop">
+          <h3 class="box-title">Responsive Web</h3>
+          <p class="box-subtitle">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio
+            tenetur deserunt nostrum eligendi.
+          </p>
+        </article>
+        <article class="services-box services-box_locked">
+          <h3 class="box-title">Web Security</h3>
+          <p class="box-subtitle">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio
+            tenetur deserunt nostrum eligendi.
+          </p>
+        </article>
+      </div>
+    </section>
 
-  <div class="services-block">
-    <article class="services-box services-box_basket">
-      <h3 class="box-title">E-Commerce</h3>
-      <p class="box-subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio tenetur deserunt nostrum eligendi.</p>
-    </article>
-    <article class="services-box services-box_laptop">
-      <h3 class="box-title">Responsive Web</h3>
-      <p class="box-subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio tenetur deserunt nostrum eligendi.</p>
-    </article>
-    <article class="services-box services-box_locked">
-      <h3 class="box-title">Web Security</h3>
-      <p class="box-subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio tenetur deserunt nostrum eligendi.</p>
-    </article>
-  </div>
-</section>
+    <section class="block-form">
+      <div class="wrap-form container">
+        <div class="title">
+          <h2 class="title-services title-services_white">Contact Us</h2>
+          <p class="sub-title">
+            Lorem ipsum dolor sit amet consectetur adipis.
+          </p>
+        </div>
 
+        <form action="#" method="get" action="#" class="form">
+          <fieldset class="fieldset">
+            <input type="text" name="name" placeholder="YOUR NAME *" required/>
+            <input type="email" name="e-mail" placeholder="YOUR E-MAIl *" required/>
+            <input type="text" name="subject" placeholder="SUBJECT" required/>
+          </fieldset>
+          <fieldset class="fieldset">
+            <textarea name ="comments" rows="5" cols="45" placeholder="YOUR MESSAGE *" required></textarea>
+          </fieldset>
 
-<section class="block-form">
-
-  <div class="wrap-form container">
-    
-    <div class="title">
-      <h2 class="title-services title-services_white">Contact Us</h2>
-      <p class="sub-title">Lorem ipsum dolor sit amet consectetur adipis.</p>
-    </div>
-
-    <form action=""></form>
-  </div>
-
-</section>
-
-   
-</body>
+          
+        </form>
+        <button type="submit" class="button">SEND MESSAGE</button>
+      </div>
+    </section>
+  </body>
 </html>
