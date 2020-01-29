@@ -184,18 +184,20 @@ img {
 }
 
 input {
-  display: block;
+  /* display: block; */
   width: 455px;
   height: 50px;
-  border-radius: 3%;
-  outline-style: none;
+  border-radius: 5px 5px 5px 5px;
+  border-color: #9b9b9b;
 }
 /* Задаем цвет валидности для полей ввода */
 input:valid {
   outline: 1px solid green;
+ 
 }
 input:invalid {
   outline: 1px solid red;
+  z-index: 1;
 }
 
 input:not(:nth-child(3)) {
@@ -206,8 +208,8 @@ textarea {
   display: block;
   width: 455px;
   height: 210px;
-  border-radius: 3%;
-  outline-style: none;
+  border-radius: 2%;
+  /* outline-style: none; */
 }
 /* Задаем цвет валидности для полей ввода */
 textarea:valid {
