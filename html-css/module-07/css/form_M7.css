@@ -79,7 +79,7 @@ img {
 
 /* Style block services!!!! */
 .services {
-  margin: 100px auto;
+  padding: 100px 0 160px;
   text-align: center;
 }
 
@@ -109,11 +109,13 @@ img {
   text-align: center;
   margin: 0;
   padding: 0;
-  margin-top: 40px;
+  margin-top: 70px;
+  /* padding-bottom: 40px; */
 }
 .services-box {
-  display: block;
-  height: 235px;
+  /* Article и есть блочные елемент */
+  /* display: block; */
+  /* height: 235px; */
   width: 290px;
 }
 
@@ -122,7 +124,7 @@ img {
   content: "";
   display: block;
   height: 74px;
-  margin: 28px 0 25px;
+  margin-bottom: 25px;
 }
 /* Вставляем сами иконки через псевдоєлементы */
 .services-box_basket::before {
@@ -151,7 +153,7 @@ img {
 
 /* Style block-form!!!! */
 .block-form {
-  height: 676px;
+  /* height: 676px; */
   width: 100%;
   padding: 60px 0;
   background: url(../img/Map_Image.png) no-repeat center/cover;
@@ -171,6 +173,8 @@ img {
 /* Style form */
 .form {
   display: flex;
+  /* Для того, что бы кнопка пошла вниз под конактную форму */
+  flex-wrap: wrap;
   margin-top: 65px;
   width: 940px;
 }
@@ -236,14 +240,20 @@ textarea::placeholder {
 }
 
 /* Style button */
-.button {
+.form-btn {
   display: block;
-  /* margin-top: 30px; */
+  /* width: 100%; */
+  margin: 30px auto;
+ 
+}
+
+.button {
+  /* margin: 0 auto;
+  display: block; */
   width: 240px;
   height: 65px;
   text-align: center;
   background-color: #fed136;
-  margin: 30px auto;
   border: 1px solid #fed136;
   border-radius: 3%;
   font-family: "MontserratBold";
@@ -251,4 +261,11 @@ textarea::placeholder {
   text-transform: uppercase;
   color: #ffffff;
   cursor: pointer;
+}
+/* Задаем эфект наведения на btn */
+.button:hover {
+  cursor: pointer;
+  transition: all 0.3s linear;
+  background-color: grey;
+  border: 1px solid black;
 }
