@@ -76,6 +76,7 @@ body {
   font-family: "PT Sans", sans-serif;
   font-size: 16px;
   line-height: 1.5;
+  padding: 20px;
 }
 
 .parent {
@@ -84,7 +85,7 @@ body {
   height: 500px;
   background-color: #212121;
 }
-.child {
+.child_purpple {
   position: absolute;
   width: 150px;
   height: 150px;
@@ -101,7 +102,68 @@ body {
   top: 50%;
   transform: translateY(-50%);
 
-  /* Просто перемещение относительно своего положения */
+  /* Просто перемещение относительно своего положения и также помогает перемещаться без " position: absolute;" */
   /* transform: translateX(50%); */
   background-color: palevioletred;
+}
+.child_blue {
+  /* position: absolute; */
+  width: 150px;
+  height: 150px;
+  background-color: blue;
+  /* top: 25%;  */
+  transform: translateY(100%);
+}
+
+/* Оформляем картинку карту как модальное окно */
+
+/* Задаем .card свойство "position: relative", что бы .overlay разместился поверх картинки и ним можно было управлять как модальным окном */
+.card {
+  position: relative;
+  width: 224px;
+  box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.3);
+}
+.overlay {
+  position: absolute;
+  /* можно и в пикселях задавать ширину, но здесь для лучшей гибкости и так далее... */
+  width: 100%;
+  height: 249px;
+  background-color: rgb(76, 118, 255);
+  /* opacity: 0.949; */
+  /* Визуально наше окно присутствует, но для того, что бы оно появлялось при ховере мы задали прозрачность 0 (opacity: 0) */
+  opacity: 0;
+}
+
+.card:hover .overlay {
+  opacity: 0.949;
+}
+ 
+/* Style and position icon */
+.overlay-icon {
+  position: absolute;
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  background-color:red;
+  top: 100px;
+  right: 50px;
+}
+
+
+/* Style article */
+.article {
+  position: relative;
+  width: 300px;
+  /* padding-left: 60px задаем, для того что бы можно было разместить нашу иконку слева от контента */
+  padding-left: 60px;
+  box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.3);
+}
+.article::before {
+  /* данное позиционирование позволяет нашу икноку перемещать как угодно по родителю и плюс есть место слева " padding-left: 60px" */
+  position: absolute; 
+  display: inline-block;content: '';
+  top: 5px;
+  left: 5px;
+  width: 50px;
+  height: 50px;background-color: red;
 }

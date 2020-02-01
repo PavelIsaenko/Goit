@@ -8,6 +8,7 @@ html {
   box-sizing: inherit;
 }
 
+
 p::before {
   content: "123";
   color: aqua;
@@ -21,6 +22,11 @@ p::after {
 }
 
 /* Style link ex +ent */
+/* Первый пример работы с иконками в кнопках */
+.example_1 {
+  display: block;
+  margin-top: 30px;
+}
 .link {
   position: relative;
   text-align: center;
@@ -62,6 +68,79 @@ p::after {
   background-size: contain;
   background-position: center;
 }
+
+
+
+/* Второй пример работы с иконками в кнопках */
+.example_2 {
+  margin-top: 50px;
+}
+.example_2 li {
+  display: inline-block;
+  list-style: none;
+}
+/*Style btn */
+.btn {
+  text-decoration: none;
+  display: inline-block;
+  text-decoration: none;
+  border: 1px solid #000;
+  width: 100px;
+  height: 50px;
+  /* Для центрирования иконки и текста */
+  line-height: 50px;
+  text-align: center;
+}
+.btn_enter::before {
+  content: '';
+  display: inline-block;
+  /* Для центрирования иконки*/
+  vertical-align: middle;
+  margin-right: 2px;
+ height: 20px;
+ width: 20px;
+ background-image: url(../img/icons/icon-login.png);
+ background-size: contain;
+ background-position: center;
+}
+.btn_exit::after {
+  content: '';
+  display: inline-block;
+  /* Для центрирования иконки*/
+  vertical-align: middle;
+  margin-left: 2px;
+ height: 20px;
+ width: 20px;
+ background-image: url(../img/icons/icon-logout.png);
+ background-size: contain;
+ background-position: center;
+}
+
+
+
+/* Style p ::selection */
+/*Выделяет текст при наведении на него с помощью псевдоэлемента ::selection */
+p::selection {
+  color: red;
+  background-color: teal;
+}
+
+/* Добавляем кавычки для "span"*/
+span::before {
+  content: '\275C\275C';
+  display: inline-block;
+background-color: grey;
+  height: 5px;
+  vertical-align: top;
+}
+
+span::after {
+  content: '\275C'
+}
+
+
+
+
 
 /* body {
   font-family: "PT Sans", sans-serif;
