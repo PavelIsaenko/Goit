@@ -1,4 +1,27 @@
-@media (max-width: 599px) {
+@media (max-width: 600px) {
+  .page-header {
+    margin-bottom: 70px;
+  }
+  .banner {
+    display: none;
+  }
+  .features-list-item:not(:last-child) {
+    margin-bottom: 72px;
+  }
+  /* Выравниваем картинку по центру в мобильном блоке, так как её ширина составляет 270 пикс, и поэтому онаа должна находиться по центру */
+  .team-list-item {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .team-list-item:not(:last-child) {
+    margin-bottom: 40px;
+  }
+}
+
+
+
+
+/* @media (max-width: 599px) {
   .page-header {
     margin-bottom: 70px;
   }
@@ -144,4 +167,4 @@
   .features-list-item:nth-last-child(-n + 3) {
     margin-bottom: 0;
   }
-}
+} */

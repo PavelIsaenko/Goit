@@ -14,13 +14,15 @@ img {
 }
 
 body {
-  font-family: "Raleway", "Arial",sans-serif;
+  font-family: "Raleway", "Arial", sans-serif;
   color: #6c7279;
   font-size: 14px;
   line-height: 21px;
 }
 
-.visually-hidden:not(:focus):not(:active), input[type="checkbox"].visually-hidden, input[type="radio"].visually-hidden {
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
   position: absolute;
 
   width: 1px;
@@ -36,16 +38,13 @@ body {
   overflow: hidden;
 }
 
-
 /* width container */
-.container{
-   width: 1170px;
-   /* background-color:teal; */
-   margin: 0 auto;
+.container {
+  width: 320px;
+  padding: 0 15px;
+  /* background-color:teal; */
+  margin: 0 auto;
 }
-
-
-
 
 /* Style Menu */
 .page-header {
@@ -55,24 +54,31 @@ body {
   /* margin-bottom: 200px; */
 }
 
-/* Задаем внутренние отступы для увеления блока header-меню +  display: flex для размещения по вертикали блоков...align-items: center выравниваем блоки по центру */
 .page-nav {
-  justify-content: space-between;
-  display: flex;
   min-height: 100px;
-  align-items: center;
-}
-/*Задаем display: inline-block; для (.site-logo  и .site-navigation), что бы все разместилось в одну строку*/
-.site-logo {
-  display: inline-block;
-  /* vertical-align: middle; */
 }
 
-/* меню + display: flex для размещения по вертикали блоков*/
+.site-logo {
+  display: inline-block;
+  /* Что бы появлялось анимция */
+  animation: logo-appear 1s linear;
+}
+/* Создаем анимацию к Logo  с помощью @keyframes*/
+@keyframes logo-appear {
+   0% {
+      transform: translateY(-200px);
+   }
+   50% {
+      transform: translateY(0);
+      transform: rotate(0);
+   }
+   100% {
+      transform: rotate(360deg);
+   }
+}
+
+/* меню */
 .site-navigation {
-  display: flex;
-  justify-content: space-between;
-  width: 600px;
   font-size: 13px;
   list-style: none;
   margin: 0;
@@ -80,11 +86,13 @@ body {
 }
 
 .site-navigation a {
-color: white;
-font-weight: 700;
-text-transform: uppercase;
-text-decoration: none;
-line-height: 16px;
+   display: block;
+  color: white;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none;
+  line-height: 16px;
+  transition: color 1s linear;
 }
 /* Задаем фокус и выделение на нашей ссылку а */
 .site-navigation a:hover,
@@ -92,46 +100,29 @@ line-height: 16px;
   color: #e84545;
 }
 .site-navigation li:first-child a {
-  color: blue;   
+  color: blue;
 }
 
 /* Banner */
-.banner {
-  /* Задаем данные свойства display: flex;
-  align-items: center;
-  justify-content: center;, что бы если убрать клас "container" в блоке banner,то слайдер был по центру*/
+/* .banner {
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   min-height: 600px;
   margin-bottom: 120px;
-  background: linear-gradient( to right,
-   rgba(255, 0, 0, 0.3),
-    rgba(0, 0, 255, 0.3)),
-  linear-gradient( to top,
-   rgba(0, 210, 250, 0.3),
-    rgba(145, 140, 170, 0.3)),
-  url(../img/banner.jpeg) no-repeat center/ cover;
-}
+  background: linear-gradient(
+      to right,
+      rgba(255, 0, 0, 0.3),
+      rgba(0, 0, 255, 0.3)
+    ),
+    linear-gradient(to top, rgba(0, 210, 250, 0.3), rgba(145, 140, 170, 0.3)),
+    url(../img/banner.jpeg) no-repeat center/ cover;
+} */
 
-.slider {
-  width: 500px;
+/* .slider {
   height: 100px;
   background-color: teal;
-}
-
-  /* background-size: cover; */
-
-  
-  /* Again try Gridient-linear */
-  /* background: linear-gradient( to left ,rgba(108, 114, 121, 0.3), rgba( 30, 130, 0, 0.4)
-  ),
-  url(../img/banner.jpeg) no-repeat center / cover; */
-
-
-
-
-
+} */
 
 
 /* Style block Features */
@@ -139,43 +130,21 @@ line-height: 16px;
 .features {
   margin-bottom: 120px;
 }
-
-/* С помощью display: flex размещаем блоки по вертикале, а flex-wrap: wrap помогает им перейти на другой уровень */
 .features-list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
   list-style: none;
   margin: 0;
   padding: 0;
-  /* background-color: black; */
-
 }
 .features-list-item {
-  /* width: 370px; */
-  /* Вмсето  flex-grow: 0;
-  flex-shrink: 0;  и flex-basis: 370px;*/
-  flex: 0 0 370px;
-  margin-bottom: 72px;
-  text-align: center;  
-  /* background-color: teal; */
+  width: 290px;
+  text-align: center; 
 }
-
-/* Задаем трем последним li маржин-ботом:0 */
-.features-list-item:nth-last-child(-n+3) {
-  margin-bottom: 0;
-}
-
-/* Другой вариант задать всем .features-list-item маржин-райт:30, кроме каждого 3-го */
-/* .features-list-item:not(:nth-child(3n)) {
-  margin-right: 30px;
-} */
 
 
 /* Стилизируем иконки с помощью псевдоелементов */
 /* [class*="item"]::before */
 .features-list-item::before {
-  content: '';
+  content: "";
   display: block;
   /* width: 100%; */
   height: 60px;
@@ -208,51 +177,48 @@ line-height: 16px;
   color: #2d3033;
   line-height: 17px;
 }
-.features-list-item p{
+.features-list-item p {
   font-size: 14px;
 }
 
-
-
 /* Style block Team */
-.team{
+.team {
   margin-bottom: 120px;
 }
 .team-list {
-  display: flex;
-  justify-content: space-between;
   list-style: none;
   margin: 0;
   padding: 0;
-  font-size: 0;
 }
 
-/* за счет padding: 10px;
-  box-shadow: сделали эфект наведения на карточку */
+/* за счет padding: 5px;
+   box-shadow: сделали эфект наведения на карточку */
 .team-list-item {
   width: 270px;
-  padding: 10px;
+  padding: 5px;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-} 
+  transition: transform 1s ease-in, box-shadow 1s linear;
+}
 .team-list-item:hover {
+   transform: scale(1.1);
   box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 }
 
 .team-list-item:hover img {
-  filter:grayscale(0.3);
+  filter: grayscale(0.3);
 }
 
 /* Filter for image */
 /* задали всем картинкам-команды серый фон */
 .team-list-image {
-filter:grayscale(1);
+  filter: grayscale(1);
+  transition: filter 1s linear;
 }
 /* При наведение за счет hover возвращается реальный вид */
 /* .team-list-image:hover {
-  filter:grayscale(0); 
+   filter:grayscale(0); 
 } */
 
-}
 /* Style text */
 .team-list-name {
   font-size: 22px;
@@ -269,17 +235,16 @@ filter:grayscale(1);
   font-size: 14px;
 }
 
-
 /* style baseline */
 .team-list-social {
   display: flex;
-margin: 0;
-padding: 0;
-list-style: none;
-font-size: 14px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 14px;
 }
 
-.team-list-social li{
+.team-list-social li {
   margin-right: 4px;
 }
 .team-list-social li:last-child {
@@ -299,6 +264,8 @@ font-size: 14px;
   /* Property for the icon */
   background-repeat: no-repeat;
   background-position: center;
+  /* Задаем анимацию для иконок с помощью transition */
+  transition: background-color 1s linear;
 }
 .team-list-social a:hover,
 .team-list-social a:focus {
@@ -316,22 +283,19 @@ font-size: 14px;
   background-image: url("../img/icons/social/icon-linkedin.png");
 }
 
-
-
 /* Footer */
 .page-footer {
-  /* display: flex;
-  justify-content: space-between; */
+  display: none;
   background-color: #3a3e64;
   color: #ffffff;
 }
 
-/* Задаем такой клас, что бы непосредственно внетренним элементам в container применялись эти свойства */
+/* Что бы заработал display: flex именно для "container" в блоке "page-footer"  */
 .page-footer .container {
   display: flex;
   justify-content: space-between;
-  min-height: 246px;
   align-items: center;
+  min-height: 246px; 
 }
 
 .download-button {
