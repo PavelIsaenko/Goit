@@ -1,0 +1,86 @@
+@media (max-width: 747px) {
+  /* Header */
+   .nav {
+      display: flex;
+      /* flex-direction: column-reverse; */
+      flex-wrap: wrap-reverse;  
+     align-items: center;
+      text-align: center;
+      height: 240px;
+      max-width: 230px;
+      margin: 0 auto;
+    padding: 20px 0 0;
+   }
+   .nav-logo {
+      align-self: flex-start;
+      margin: 0 auto;
+   }
+   .nav-navigation {
+      display: flex;
+      justify-content: center;
+      align-self: flex-end;
+      margin: 0 auto;
+   
+   }
+   /* title header  */
+   .header-title h2 {
+      font-size: 30px;
+      margin: 50px 0 10px;
+      line-height: 1.4;
+    }
+    .header-title p {
+      font-size: 18px;
+      margin: 20px 0;
+    }
+   
+
+/* Style block Partner */
+    .partner {
+      display: flex;
+      flex-direction: column;
+   }
+   .partner-title {
+      word-wrap: break-word;
+      margin: 70px 30px 0;
+   }
+   
+   
+   .gallery-partner {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+   }
+   .partner-box {
+      padding: 20px 0;
+   } 
+   .partner-box h3 {
+      padding: 20px 0;
+   } 
+
+   /* Поменял порядок размещения блоков */
+   .partner-box:nth-child(1) {
+      order: 1;
+   }
+   .partner-box:nth-child(2) {
+      order: 3;
+   }
+   .partner-box:nth-child(3) {
+      order: 2;
+   }
+   .partner-box:nth-child(4) {
+      order: 4;
+   }
+
+
+
+   /* Style btn-partner */
+   .partner-btn {
+      min-width: 277px;
+      margin: 0 auto;
+      margin-bottom: 30px;
+   }
+}
+
+
+

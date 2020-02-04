@@ -1,50 +1,204 @@
 html {
-   box-sizing: border-box;
- }
- *,
- *::before,
- *::after {
-   box-sizing: inherit;
- }
- 
- img {
-   display: block;
-   max-width: 100%;
-   height: auto;
- }
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
 
-
- /* .overlay {
-    width: 120px;
-    height: 120px;
-    position: relative;
- }
- .overlay-icon {
-    width: 40px;
-    height: 40px;
-    position: absolute;
- } */
-
- .main-partner {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
- }
-
-
- .modal-icon {
-   position: relative;
-   width: 120px;
-   height: 120px;
-   z-index: 1;
- }
- .modal-icon::before {
-   content: '';
-   background: url(../img/icon/icon-tv.png) no-repeat center;
+img {
   display: block;
-   position: absolute;
-   width: 40px;
-   height: 40px;
-   transform: translate(200%, 200%);
- }
+  max-width: 100%;
+  height: auto;
+}
+/* Подключение шрифтов */
+@font-face {
+  font-family: "MontserratRegular";
+  src: url("../fonts/Montserrat-Regular.ttf") format("truetype");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "MontserratBold";
+  src: url("../fonts/Montserrat-Bold.ttf") format("truetype");
+  font-weight: 700;
+}
 
+@font-face {
+  font-family: "RobotoLight";
+  src: url("../fonts/Roboto-Light.ttf") format("truetype");
+  font-weight: 300;
+}
+@font-face {
+  font-family: "RobotoRegular";
+  src: url("../fonts/Roboto-Regular.ttf") format("truetype");
+  font-weight: 400;
+}
+
+/* .container {
+  width: 940px;
+  margin: 0 auto;
+} */
+
+.header {
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+  /* min-height: 600px;
+  margin-bottom: 120px; */
+  min-height: 700px;
+  background: url(../img/Vector_Smart_Object_1.png) no-repeat center/ cover;
+}
+
+
+/* Style nav */
+/* .nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+} */
+.nav-navigation {
+  /* display: flex;
+  justify-content: space-between; */
+  list-style: none;
+  width: 230px;
+  /* margin: 0;
+  padding: 0; */
+}
+.nav-navigation a {
+  text-decoration: none;
+  font-size: 14px;
+  font-family: "MontserratBold";
+  color: #ffffff;
+  padding: 10px 12px;
+  transition: border 200ms linear;
+  line-height: 20px;
+}
+.nav-navigation a:hover {
+  border: 2px solid #fff;
+  border-radius: 20%;
+}
+
+/* Style title header */
+.header-title {
+  text-align: center;
+}
+.header-title h2 {
+  font-size: 52px;
+  font-family: "MontserratBold";
+  text-transform: uppercase;
+  color: #fff;
+  line-height: 1.2;
+}
+.header-title p {
+  font-size: 24px;
+  font-family: "RobotoLight";
+  color: #e5d9d6;
+}
+
+/* Stylr header-btn */
+.header-btn {
+    font-size: 14px;
+    font-family: "MontserratBold";
+    color: #fff;
+    background-color: #ff4e50;
+    border: none;
+    border-radius: 25px;
+    padding: 12px 22px;
+    cursor: pointer;
+    transition: all 200ms linear;
+}
+.header-btn:hover,
+.header-btn:focus {
+  background-color: grey;
+}
+
+
+
+
+
+/* Style main block */
+
+.partner {
+  text-align: center;
+}
+.gallery-partner {
+  /* display: flex;
+  flex-wrap: wrap;
+  justify-content: center; */
+  text-align: center;
+}
+.partner-box {
+  width: 220px;
+}
+
+
+/* Style partner-title */
+.partner-title {
+  text-align: center;
+  font-size: 22px;
+  font-family: "MontserratBold";
+  color: #333333;
+}
+
+/* Style title partner-box */
+.partner-box h3 {
+  font-size: 14px;
+  font-family: "MontserratBold";
+  color: #333333;
+}
+.partner-box p {
+  font-size: 14px;
+  font-family: "RobotoLight";
+  color: #8f8f8f;
+
+}
+/* Добавляем иконки к картинками и стилизуем их с помощью блока modal-icon */
+.modal-icon {
+  position: relative;
+  display: block;
+  /* width: 120px;
+  height: 120px; */
+  z-index: 1;
+}
+.modal-icon img {
+  margin: 0 auto;
+}
+.modal-icon::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  transform: translate(330%, 210%);
+}
+/* Сами иконки вставляем */
+.icon_tv::before {
+  background: url(../img/icon/icon-tv.png) no-repeat center;
+}
+.icon_caf::before {
+  background: url(../img/icon/icon-coffee.png) no-repeat center;
+}
+.icon_chemi::before {
+  background: url(../img/icon/icon-chemical.png) no-repeat center;
+}
+.icon_teleg::before {
+  background: url(../img/icon/icon-teleg.png) no-repeat center;
+}
+
+/* Style btn-partner */
+.partner-btn {
+  font-size: 14px;
+  font-family: "MontserratBold";
+  color: #ff4e50;
+  background-color: #ffffff;
+  border: 2px solid #ff4e50;
+  border-radius: 25px;
+  padding: 12px 22px;
+  cursor: pointer;
+  transition: all 200ms linear;
+}
+.partner-btn:hover,
+.partner-btn:focus {
+background-color: grey;
+}

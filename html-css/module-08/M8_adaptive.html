@@ -6,70 +6,79 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Document</title>
     <link rel="stylesheet" href="css/normalise.css" />
+    <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/M8_adaptive.css" />
     <link rel="stylesheet" href="css/media_M8.css" />
   </head>
+
   <body>
     <header class="header">
-      <nav class="nav">
-        <a href="#" class="nav-logo">
-          <img src="img/logo.png" alt="logo" />
-        </a>
-        <ul class="nav-navigation">
-          <li><a href="#">Log in</a></li>
-          <li><a href="#">Sign up</a></li>
-        </ul>
-      </nav>
+      <div class="container">
+         
+        <nav class="nav">
+          <a href="#" class="nav-logo">
+            <img src="img/logo.png" alt="logo" />
+          </a>
+          <ul class="nav-navigation">
+            <li><a href="#">Log in</a></li>
+            <li><a href="#">Sign up</a></li>
+          </ul>
+        </nav>
 
-      <div class="header-title">
-        <h1>Share your holiday dreams</h1>
-        <p>And find the perfect partner to fullfill it</p>
-        <button>Find your holiday partner</button>
+        <div class="header-title">
+          <h2>Share your <br />holiday dreams</h2>
+          <p>And find the perfect partner to fullfill it</p>
+
+          <button class="header-btn">Find your holiday partner</button>
+        </div>
       </div>
     </header>
 
     <main class="main">
-      <h2 class="partner-title">Meet a partner for your best holiday</h2>
 
-      <section class="main-partner">
-         
-        <article class="partner-box">
-          <span class="modal-icon">
-            <img src="img/Pict_1.png" alt="pict_partner" class="box-img" />
-          </span>
-          <h3 class="box-name">Bradley Hunter</h3>
-          <p class="box-description">
-            Based in Chicago. I love playing tennis and loud music.
-          </p>
-        </article>
-        <article class="partner-box">
-         <span class="modal-icon">
-            <img src="img/Pict_1.png" alt="pict_partner" class="box-img" />
-          </span>
-          <h3 class="box-name">Bradley Hunter</h3>
-          <p class="box-description">
-            Based in Chicago. I love playing tennis and loud music.
-          </p>
-        </article>
-        <article class="partner-box">
-         <span class="modal-icon">
-            <img src="img/Pict_1.png" alt="pict_partner" class="box-img" />
-          </span>
-          <h3 class="box-name">Bradley Hunter</h3>
-          <p class="box-description">
-            Based in Chicago. I love playing tennis and loud music.
-          </p>
-        </article>
-        <article class="partner-box">
-         <span class="modal-icon">
-            <img src="img/Pict_1.png" alt="pict_partner" class="box-img" />
-          </span>
-          <h3 class="box-name">Bradley Hunter</h3>
-          <p class="box-description">
-            Based in Chicago. I love playing tennis and loud music.
-          </p>
-        </article>
-        <button>See other partners</button>
+      <section class="partner container">
+        <h2 class="partner-title">Meet a partner for your best holiday</h2>
+
+        <div class="gallery-partner">
+          <article class="partner-box">
+            <span class="modal-icon icon_tv">
+              <img src="img/Pict_1.png" alt="pict_partner" class="box-img" />
+            </span>
+            <h3>Bradley Hunter</h3>
+            <p>
+              Based in Chicago. I love playing tennis and loud music.
+            </p>
+          </article>
+          <article class="partner-box">
+            <span class="modal-icon icon_caf">
+              <img src="img/Pict_2.png" alt="pict_partner" class="box-img" />
+            </span>
+            <h3>Heather Walker</h3>
+            <p>
+               I'm a happy person that loves cats and climbing on mountains. 
+            </p>
+          </article>
+          <article class="partner-box">
+            <span class="modal-icon icon_chemi">
+              <img src="img/Pict_3.png" alt="pict_partner" class="box-img" />
+            </span>
+            <h3>Lucas Marsha</h3>
+            <p>
+               I get my inspiration from nature and objects around me. I have a passoins to colours, typoghraphy and skateboards
+            </p>
+          </article>
+          <article class="partner-box">
+            <span class="modal-icon icon_teleg">
+              <img src="img/Pict_4.png" alt="pict_partner" class="box-img" />
+            </span>
+            <h3>Bradley Hunter</h3>
+            <p>
+              Based in Chicago. I love playing tennis and loud music.
+            </p>
+          </article>
+        </div>
+
+        <button class="partner-btn">See other partners</button>
       </section>
     </main>
   </body>
