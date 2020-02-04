@@ -1,6 +1,23 @@
-@media (max-width: 600px) {
+@media (max-width: 599px) {
   .page-header {
     margin-bottom: 70px;
+  }
+  .site-navigation a {
+    padding: 5px 0;
+    font-size: 24px;
+    line-height: 1;
+    text-align: center;
+  }
+  .page-nav {
+    padding: 10px 0;
+  }
+  .site-logo {
+    display: block;
+    margin-bottom: 20px;
+    /* text-align: center; */
+  }
+  .site-logo img {
+    margin: 0 auto;
   }
   .banner {
     display: none;
@@ -15,6 +32,104 @@
   }
   .team-list-item:not(:last-child) {
     margin-bottom: 40px;
+  }
+}
+
+@media (min-width: 600px) {
+  .container {
+    width: 600px;
+  }
+
+  .page-nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* flex-wrap: wrap; */
+  }
+  .site-navigation {
+    display: flex;
+    justify-content: space-between;
+  
+  }
+  
+  /* При 600px и > более мы добавляем баннер */
+  .banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 600px;
+    margin-bottom: 120px;
+    background: linear-gradient(
+        to right,
+        rgba(255, 0, 0, 0.3),
+        rgba(0, 0, 255, 0.3)
+      ),
+      linear-gradient(to top, rgba(0, 210, 250, 0.3), rgba(145, 140, 170, 0.3)),
+      url(../img/banner.jpeg) no-repeat center/ cover;
+  }
+  .slider { 
+    height: 150px;
+    background-color: teal;
+  }
+
+  .features-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .features-list-item {
+    flex: 0 0 270px;
+  }
+  .team-list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .team-list-item {
+    flex: 0 0 270px;
+  } 
+}
+
+@media (min-width: 600px) and (max-width: 1169px) {
+  .site-logo {
+    margin-bottom: 30px;
+  }
+
+  .site-navigation {
+    width: 100%;
+  }
+  /* Задали отступи для блоков с иконками и картинками (team) */
+  .features-list-item:not(:nth-last-child(-n+2)),.team-list-item:not(:nth-last-child(-n+2)) {
+    margin-bottom: 40px;
+  }
+}
+
+@media (min-width: 1170px) {
+  .container {
+    width: 1170px;
+  }
+
+  .page-nav {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .site-navigation {
+    flex: 0 0 600px;
+  }
+
+.banner {
+  min-width: 400px;
+}
+
+
+  .features-list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .features-list-item {
+    flex: 0 0 370px;
   }
 }
 

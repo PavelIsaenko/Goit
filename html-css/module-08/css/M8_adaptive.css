@@ -1,0 +1,50 @@
+html {
+   box-sizing: border-box;
+ }
+ *,
+ *::before,
+ *::after {
+   box-sizing: inherit;
+ }
+ 
+ img {
+   display: block;
+   max-width: 100%;
+   height: auto;
+ }
+
+
+ /* .overlay {
+    width: 120px;
+    height: 120px;
+    position: relative;
+ }
+ .overlay-icon {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+ } */
+
+ .main-partner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+ }
+
+
+ .modal-icon {
+   position: relative;
+   width: 120px;
+   height: 120px;
+   z-index: 1;
+ }
+ .modal-icon::before {
+   content: '';
+   background: url(../img/icon/icon-tv.png) no-repeat center;
+  display: block;
+   position: absolute;
+   width: 40px;
+   height: 40px;
+   transform: translate(200%, 200%);
+ }
+

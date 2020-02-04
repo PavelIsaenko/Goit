@@ -103,26 +103,6 @@ input[type="radio"].visually-hidden {
   color: blue;
 }
 
-/* Banner */
-/* .banner {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 600px;
-  margin-bottom: 120px;
-  background: linear-gradient(
-      to right,
-      rgba(255, 0, 0, 0.3),
-      rgba(0, 0, 255, 0.3)
-    ),
-    linear-gradient(to top, rgba(0, 210, 250, 0.3), rgba(145, 140, 170, 0.3)),
-    url(../img/banner.jpeg) no-repeat center/ cover;
-} */
-
-/* .slider {
-  height: 100px;
-  background-color: teal;
-} */
 
 
 /* Style block Features */

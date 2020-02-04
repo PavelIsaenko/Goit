@@ -132,8 +132,6 @@ html {
  .slider {
    height: 100px;
    background-color: teal;
-   /* To add class="container" */
-   /* width: 500px; */
  }
  
  /* background-size: cover; */
@@ -143,23 +141,13 @@ html {
     ),
     url(../img/banner.jpeg) no-repeat center / cover; */
  
+
+
+
  /* Style block Features */
  /* Задаем нижний отступ именно секции для гибкости, а не внутренним элементам */
- .features {
-   margin-bottom: 120px;
- }
- .features-list {
-   display: flex;
-   flex-wrap: wrap;
-   justify-content: space-between;
-   list-style: none;
-   margin: 0;
-   padding: 0;
- }
+ 
  .features-list-item {
-   /* flex-basis: 370px;
-   flex-grow: 0;
-   flex-shrink: 0; */
    flex: 0 0 370px;
    margin-bottom: 72px;
    text-align: center;
