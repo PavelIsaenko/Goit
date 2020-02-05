@@ -160,6 +160,7 @@ img {
   /* width: 120px;
   height: 120px; */
   z-index: 1;
+  
 }
 .modal-icon img {
   margin: 0 auto;
@@ -171,6 +172,7 @@ img {
   width: 40px;
   height: 40px;
   transform: translate(330%, 210%);
+  cursor: pointer;
 }
 /* Сами иконки вставляем */
 .icon_tv::before {
