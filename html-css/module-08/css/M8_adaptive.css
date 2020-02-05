@@ -202,5 +202,6 @@ img {
 }
 .partner-btn:hover,
 .partner-btn:focus {
-background-color: grey;
+background-color: #ff4e50;
+color: #ffffff;
 }
