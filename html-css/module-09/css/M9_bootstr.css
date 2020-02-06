@@ -1,0 +1,347 @@
+html {
+   box-sizing: border-box;
+ }
+ *,
+ *::before,
+ *::after {
+   box-sizing: inherit;
+ }
+ 
+ img {
+   display: block;
+   max-width: 100%;
+   height: auto;
+ }
+ /* Подключение шрифтов */
+ @font-face {
+   font-family: "MontserratRegular";
+   src: url("../fonts/Montserrat-Regular.ttf") format("truetype");
+   font-weight: 400;
+ }
+ @font-face {
+   font-family: "MontserratBold";
+   src: url("../fonts/Montserrat-Bold.ttf") format("truetype");
+   font-weight: 700;
+ }
+ 
+ @font-face {
+   font-family: "RobotoLight";
+   src: url("../fonts/Roboto-Light.ttf") format("truetype");
+   font-weight: 300;
+ }
+ @font-face {
+   font-family: "RobotoRegular";
+   src: url("../fonts/Roboto-Regular.ttf") format("truetype");
+   font-weight: 400;
+ }
+
+ /* .container {
+    max-width: 940px;
+ } */
+
+
+ .header {
+   /* min-height: 600px;
+   margin-bottom: 120px; */
+   min-height: 700px;
+   background: url(../img/Vector_Smart_Object_1.png) no-repeat center/ cover;
+ }
+
+ /* Style menu */
+ /* .navigation{
+    margin: 0 auto;
+ } */
+ .nav {
+  width: 230px;
+}
+ .nav-item a {
+   text-decoration: none;
+   font-size: 14px;
+   font-family: "MontserratBold";
+   color: #ffffff;
+   padding: 10px 12px;
+   transition: border 200ms linear;
+   line-height: 20px;
+   border: 2px solid rgba(255, 255, 255, 0);
+   border-radius: 20%;
+ }
+ .nav-item a:hover {
+   border: 2px solid #fff;
+   border-radius: 20%;
+ }
+
+ /* Style title header */
+.header-title {
+   text-align: center;
+ }
+ .header-title h2 {
+   font-size: 52px;
+   font-family: "MontserratBold";
+   text-transform: uppercase;
+   color: #fff;
+   line-height: 1.2;
+ }
+ .header-title p {
+   font-size: 24px;
+   font-family: "RobotoLight";
+   color: #e5d9d6;
+ }
+ 
+ /* Stylr header-btn */
+ .btn_red {
+     font-size: 14px;
+     font-family: "MontserratBold";
+     color: #fff;
+     background-color: #ff4e50;
+     border: none;
+     border-radius: 25px;
+     padding: 12px 22px;
+     cursor: pointer;
+     transition: all 200ms linear;
+ }
+ .btn_red:hover,
+ .btn_red:focus {
+   background-color: grey;
+ }
+
+
+
+
+
+/* Style Partner block */
+.partner {
+  display: flex;
+  margin: 0 auto;
+}
+
+.partner-box {
+  align-content: center;
+  /* С помощью  margin: 0 auto отцентрировал контент внутри */
+  margin: 0 auto;
+  /* flex-basis: 220px; */
+  width: 220px;
+  height: 235px;
+  text-align: center;
+  /* margin-top: 20px; */
+}
+
+/* Style partner-title */
+.partner-title {
+  text-align: center;
+  font-size: 22px;
+  font-family: "MontserratBold";
+  color: #333333;
+}
+
+/* Style title partner-box */
+.partner-box h3 {
+  font-size: 14px;
+  font-family: "MontserratBold";
+  color: #333333;
+}
+.partner-box p {
+  font-size: 14px;
+  font-family: "RobotoLight";
+  color: #8f8f8f;
+
+}
+/* Добавляем иконки к картинками и стилизуем их с помощью блока modal-icon */
+.modal-icon {
+  position: relative;
+  display: block;
+  /* width: 120px;
+  height: 120px; */
+  z-index: 1;
+  
+}
+.modal-icon img {
+  margin: 0 auto;
+}
+.modal-icon::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  transform: translate(330%, 210%);
+  cursor: pointer;
+}
+/* Сами иконки вставляем */
+.icon_tv::before {
+  background: url(../img/icon/icon-tv.png) no-repeat center;
+}
+.icon_caf::before {
+  background: url(../img/icon/icon-coffee.png) no-repeat center;
+}
+.icon_chemi::before {
+  background: url(../img/icon/icon-chemical.png) no-repeat center;
+}
+.icon_teleg::before {
+  background: url(../img/icon/icon-teleg.png) no-repeat center;
+}
+
+/* Style btn-partner */
+.btn_white {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 14px;
+  font-family: "MontserratBold";
+  color: #ff4e50;
+  background-color: #ffffff;
+  border: 2px solid #ff4e50;
+  border-radius: 25px;
+  padding: 12px 22px;
+  cursor: pointer;
+  transition: all 200ms linear;
+}
+.btn_white:hover,
+.btn_white:focus {
+background-color: #ff4e50;
+color: #ffffff;
+}
+
+
+
+
+ /* media mobile screen */
+ @media (min-width: 320px) and (max-width: 767px) {
+/* style menu */
+  .navigation {
+  max-width: 320px;
+  margin: 0 auto;
+  padding: 20px 0;
+  align-content: space-between;
+  height: 260px;
+}
+.nav-logo {
+  display: flex;
+  justify-content: center;
+  min-width: 180px;
+  margin: 0 auto;
+}
+.nav {
+  display: flex;
+  justify-content: center;
+  width: 230px;
+  margin: 0 auto;
+}
+
+/* Style title header */
+.header-title {
+  min-width: 320px;
+  margin: 0 auto;
+}
+.header-title h2 {
+  font-size: 30px;
+  margin: 50px 0 10px;
+  line-height: 1.4;
+}
+.header-title p {
+  font-size: 18px;
+  margin: 20px 0;
+}
+
+
+/* style block partner */
+.partner-title {
+  margin: 0 auto;
+}
+.partner {
+  max-width: 320px;
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+.partner-box {
+  padding: 20px 0;
+}
+.partner-box h3 {
+  padding: 20px 0;
+}
+
+/* Поменял порядок размещения блоков */
+.partner-box:nth-child(1) {
+  order: 1;
+}
+.partner-box:nth-child(2) {
+  order: 3;
+}
+.partner-box:nth-child(3) {
+  order: 2;
+}
+.partner-box:nth-child(4) {
+  order: 4;
+}
+
+ /* Style btn-partner */
+ .btn_white {
+  min-width: 277px;
+}
+ }
+
+
+
+
+ /* media desctop screen */
+ @media (min-width: 1200px) {
+   /* Style menu */
+   .navigation {
+    max-width: 940px;
+    margin: 0 auto;
+    padding: 40px 0;
+    align-content: space-between;
+    /* height: 260px; */
+  }
+  .nav-logo {
+    display: flex;
+    justify-content: center;
+    min-width: 180px;
+    margin: 0 auto;
+  }
+  .nav {
+    display: flex;
+    justify-content: center;
+    width: 230px;
+    margin: 0 auto;
+  }
+  
+  /* Style title header */
+  .header-title {
+    min-width: 320px;
+    margin: 0 auto;
+  }
+  .header-title h2 {
+    font-size: 52px;
+    margin: 70px 0 10px;
+    line-height: 1.4;
+  }
+  .header-title p {
+    font-size: 24px;
+    margin: 20px 0;
+  }
+
+   /* Style Partner block */
+.partner-title {
+  margin: 0 auto;
+}
+.partner {
+  width: 940px;
+  display: flex;
+  margin: 0 auto;
+  text-align: center;
+  /* display: flex;
+  justify-content: center; */
+}
+
+.partner-box {
+  padding: 20px 0;
+}
+.partner-box h3 {
+  padding: 20px 0;
+}
+
+ 
+}
