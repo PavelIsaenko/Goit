@@ -1,0 +1,70 @@
+body {
+  font-family: "Roboto", sans-serif;
+}
+.header {
+  background-color: #303030;
+  padding: 15px 0;
+  margin-bottom: 30px;
+}
+
+.green-btn {
+  display: block;
+  width: 150px;
+  background-color: #53c38e;
+  color: #ffffff;
+  padding: 0;
+  font-weight: 500;
+  font-size: 14px;
+  text-align: center;
+  line-height: 40px;
+  border: none;
+}
+
+.search-block {
+  margin-bottom: 30px;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.08);
+  padding: 24px 0;
+  display: none;
+}
+
+.search-title {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  margin-bottom: 8px;
+}
+
+.search-text {
+  font-size: 14px;
+  line-height: 16px;
+  margin: 0;
+  color: #929292;
+}
+
+/* Задаем отступы  */
+.search-title,
+.search-text {
+  margin-left: 16px;
+}
+
+form {
+  margin-right: 16px;
+}
+
+/* Стилизуем кнопку поиска в input */
+.form-field {
+  border: 1px solid #929292;
+  width: 100%;
+  display: block;
+  font-size: 14px;
+  line-height: 16px;
+  color: #929292;
+  padding: 14px;
+}
+
+
+@media (min-width: 768px) {
+   .search-block {
+      display: block;
+   }
+}

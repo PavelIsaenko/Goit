@@ -1,0 +1,235 @@
+:root {
+   --main-color: #222222;
+   --secondary-color: #2AAD52;
+   --gray-color: #717880;
+   --white-color: #ffffff;
+}
+
+
+@font-face {
+   font-family: 'Poppins-font';
+   src: url ('../fonts/Poppins-Regular.ttf') format('truetype');
+   font-weight: 400;
+}
+@font-face {
+   font-family: 'Poppins-font';
+   src: url ('../fonts/Poppins-Light.ttf') format('truetype');
+   font-weight: 300;
+}
+@font-face {
+   font-family: 'Poppins-font';
+   src: url ('../fonts/Poppins-Medium.ttf') format('truetype');
+   font-weight: 500;
+}
+@font-face {
+   font-family: 'Poppins-font';
+   src: url ('../fonts/Poppins-Bold.ttf') format('truetype');
+   font-weight: 700;
+}
+
+body {
+   font-family: 'Poppins-font', sans-serif;
+   font-size: 16px;
+   margin: 0;
+   color:  var(--main-color);
+}
+/* To add Background-image */
+body::after {
+   content: '';
+   position: absolute;
+   width: 1271px;
+   height: 839px;
+   right: 0;
+   top: 0;
+   background-image: url('../img/bg.svg');
+   z-index: -1;
+}
+*,
+*::before,
+*::after {
+   box-sizing: border-box;
+}
+
+.container {
+   max-width: 1146px;
+   margin: 0 auto;
+}
+
+.d-flex {
+   display: flex;
+}
+
+.header {
+   padding: 40px 0;
+}
+
+/* Style menu */
+
+.menu {
+   display: flex;
+   justify-content: flex-end;
+
+}
+.header .container {
+   justify-content: space-between;
+}
+.menu,
+.submenu {
+   padding: 0;
+   margin: 0;
+   list-style: none;
+}
+.menu-item:not(:last-child) {
+   margin-right: 60px;
+
+}
+.menu-item.with-child {
+   padding-right: 16px;
+   position: relative;
+}
+
+
+/* .menu-item.with-child::before {
+content: '';
+position: absolute;
+width: 0;
+height: 0;
+border-top: 6px solid var(--white-color);
+border-right: 3px solid transparent;
+border-left: 3px solid transparent;
+right: 0;
+bottom: 6px;
+} */
+
+
+.menu-item.with-child::after {
+   content: '';
+   position: absolute;
+   width: 0;
+   height: 0;
+   border-bottom: 6px solid var(--white-color);
+   border-right: 3px solid transparent;
+   border-left: 3px solid transparent;
+   right: 0;
+   bottom: 6px;
+   transition: 0.3s linear;
+   }
+   /* Задаем движение треугольнику */
+   .menu-item.with-child:hover .submenu{
+      display: block;
+   }
+
+/* Задаем, что бы при наведение вылазил submenu */
+.menu-item.with-child:hover .submenu {
+   display: block;
+}
+/* Свойства для переворачивания стрелки-треугольник */
+.menu-item.with-child:hover::after {
+   transform: rotate(180deg);
+   bottom: 8px;
+}
+
+
+.menu-link {
+color: var(--white-color);
+text-decoration: none;
+line-height: 24px;
+font-weight: 500;
+}
+
+
+/* Create submenu */
+.submenu{
+   display: none;
+   position: absolute;
+   background-color: #3c444c;
+   border-radius: 2px;
+   padding: 16px;
+   right: 0;
+   top: 100%;
+   min-width: 134px;
+}
+.submenu-link {
+   color: var(--white-color);
+   font-size: 12px;
+   line-height: 16px;
+   text-decoration: none;
+}
+
+
+.first-screen {
+   padding: 94px 0 105px;
+}
+.column-50 {
+   width: 50%;
+}
+.main-title {
+   font-size: 34px;
+   line-height: 60px;
+   font-weight: 400;
+padding: 0 0 30px;
+}
+.main-title span {
+   color: var(--secondary-color);
+   font-weight: 700;
+}
+.subtitle {
+   line-height: 30px;
+   margin: 0 0 70px;
+}
+
+.btn {
+   width: 240px;
+   line-height: 52px;
+   color: var(--white-color);
+   border-radius: 30px;
+   text-align: center;
+   border: 0;
+   cursor: pointer;
+}
+
+.green-btn {
+   background-color: var(--secondary-color);
+   font-size: 18px;
+}
+
+.first-screen-image {
+   max-width: 100%;
+   display: block;
+   height: auto;
+   /* выровняли картинку слева, но при этом сделали автоматические отступы */
+   margin-left: auto;
+}
+
+
+/* Next section tutorial */
+.how-it-works {
+   padding: 100px 0;
+   
+}
+.how-it-works .container{
+   justify-content: center;
+   flex-wrap: wrap;
+}
+
+.section-title {
+   text-align: center;
+   font-weight: 500;
+   font-size: 26px;
+   line-height: 32px;
+   letter-spacing: 1px;
+   margin: 0 0 70px;
+}
+.tutorial-item {
+width: 33.3333%;
+text-align: center;
+}
+
+
+
+@media (max-width: 1400px ) {
+   body::after {
+   width: 621px;
+   height: 420px;
+   }
+}

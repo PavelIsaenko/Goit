@@ -1,0 +1,12 @@
+.navbar-brand {
+   text-transform: uppercase;
+}
+
+.first-screen {
+background-color: #e9ecef;
+}
+
+.jumbotron {
+   /* margin: 0; */
+   padding: 20px 0;
+}

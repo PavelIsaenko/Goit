@@ -1,0 +1,204 @@
+/* Example button */
+
+/* button {
+   width: 200px;
+   display: block;
+   padding: 12px 0;
+   border: 1px solid coral;
+   background-color: coral;
+   box-sizing: border-box;
+} */
+
+/* button:hover { */
+   /* opacity: 0.5; */
+   /* background-color: rgba(255, 127, 80, 0.5);
+}  */
+
+/* подключение шрифтов */
+@font-face {
+   font-family: 'Robotofont';
+src: url('../fonts/Roboto-Regular.ttf') format('truetype');
+font-weight: 400;
+}
+
+@font-face {
+   font-family: 'Robotofont';
+src: url('../fonts/Roboto-Black.ttf') format('truetype');
+font-weight: 900;
+}
+
+
+* {
+   box-sizing: border-box;
+}
+
+body {
+   margin: 0;
+}
+
+form {
+   width: 386px;
+   margin: 30px auto;
+   border: 1px solid #00c673;
+   border-radius: 2px;
+   padding: 78px 62px;
+}
+
+.form-field {
+   display: block;
+   width: 100%;
+   border: 1px solid #00c673;
+   background-color: #ffffff;
+   border-radius: 5px;
+   font-size: 14px;
+   line-height: 16px;
+   font-family: Arial;
+   padding: 15px 22px;
+}
+
+.first-field {
+margin-bottom: 18px;
+}
+
+/* .second-field {
+margin-bottom: 30px;
+} */
+
+.form-title {
+   margin: 0 0 20px;
+   font-size: 16px;
+   line-height: 19px;
+   font-weight: normal;  
+   margin-top: 30px; 
+}
+
+.form-label {
+   position: relative;
+   padding-left: 26px;
+   line-height: 14px;
+   display: inline-block;
+}
+
+/* Добавили зеленные квадратики для чек и радио бокс */
+.form-label::before {
+   content: '';
+   position: absolute;
+   width: 14px;
+   height: 14px;
+   top: 0;
+   left: 0;
+   border: 1px solid #00c673;
+   border-radius: 2px;
+}
+
+/* Что бы при наведение на квадраты чекбокса появлялся зеленый квадрат всередине */
+.form-checkbox:checked + .form-label::before {
+   background-color: #00c673;
+}
+
+.form-group {
+   margin-bottom: 12px;
+}
+
+.form-radio + .form-label::before {
+border-radius: 50%;
+}
+
+.form-radio + .form-label::after {
+   content: '';
+   position: absolute;   
+   width: 8px;
+   height: 8px;
+   border-radius: 50%;
+   background-color: #00c673;
+   top: 4px;
+   left: 4px;
+   display: none;
+}
+
+/* Задаем радио боксам что бы он стал блочным и появлялся зеленый кружок при нажатие на него*/
+.form-radio:checked + .form-label::after {
+   display: block;
+}
+
+/* убрали с виду штатные раидо и чексбоксы для псевдоэлементов */
+.form-radio, .form-checkbox {
+   visibility: hidden;
+   position: absolute;
+   left: -9999px;
+}
+
+/* Указуем какой именно шрифт мы будем использовать для данного h2, который загружен в начале файла css, сам шрифт находится локально на компе */
+h2 {
+   font-family: 'Robotofont';
+   font-weight: 400;
+   
+}
+
+h3 {
+   font-family: 'Robotofont';
+   font-weight: 900;
+   }
+
+
+   /* css tabs */
+   .flex-container {
+      display: flex;
+   }
+   .first-column {
+      width: 35%;
+      border-right: 1px solid #00c673;
+   }
+    .secind-column {
+       width: 65%;  
+       margin-left: 40px;
+    }
+
+    .title-list {
+       margin: 0;
+       padding: 0 50px;
+       list-style: none;
+    }
+
+    .title-item {
+       position: relative;
+       font-weight: 500;
+       font-size: 14px;
+       line-height: 16px;
+    }
+    .title-item:not(:last-child) {
+       margin-bottom: 12px;
+    }
+    /* (создаем квадратики) create green square for list - "first-column"*/
+    .title-item::before {
+       content: '';
+       position: absolute;
+       width: 6px;
+      height: 6px;
+       border-radius: 50%;
+       background-color: #00c673;
+       line-height: 16px;
+       left: -25px;
+       top: 4px;
+    }
+
+    /* создаем стрелочку */
+    .title-item.active::after {
+       content: '';
+       position: absolute;
+       border-right: 2px solid #00c673;
+       border-bottom: 2px solid #00c673;
+       width: 7px;
+       height: 7px;
+       right: 0;
+       top: 4px;
+       right: -20px;
+       /* переворачиваем стрелочку на 45 градусов */
+       transform: rotate(-45deg);   
+
+    }   
+
+
+
+
+
