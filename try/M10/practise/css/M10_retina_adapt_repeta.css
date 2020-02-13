@@ -315,7 +315,7 @@ background-position: center; */
   width: 40px;
   height: 40px;
   border: 1px solid rgb(232, 236, 238);
-  transition: fill 0.2s linear;
+  transition: fill 1s linear;
 }
 
 .team-list-social a:hover svg {
@@ -323,6 +323,8 @@ background-position: center; */
 }
 
 .team-list-social svg {
+  /* Для того, что бы сама иконка меняла цвет */
+  transition: fill 1s linear;
   display: inline-block;
   height: 20px;
   width: 20px;
