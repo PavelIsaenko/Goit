@@ -160,8 +160,9 @@ body {
 }
 .article::before {
   /* данное позиционирование позволяет нашу икноку перемещать как угодно по родителю и плюс есть место слева " padding-left: 60px" */
+  content: '';
   position: absolute; 
-  display: inline-block;content: '';
+  display: inline-block;
   top: 5px;
   left: 5px;
   width: 50px;
