@@ -136,7 +136,15 @@ img {
   background-color: rgb(255, 255, 255, 0);
   cursor: pointer;
   outline: none;
+  transition: all 1s;
 }
+
+.adv-btn:hover,
+.adv-btn:focus {
+  color: #da2828;
+  background-color: rgba(226, 207, 207, 0.8);
+}
+
 
 /* Style Blcok Services */
 /* Style title  Services*/
@@ -246,7 +254,14 @@ img {
   line-height: 24px;
 }
 
-/* Style block TEAM */
+
+
+
+/* Style block TEAM!!!!!!!!!! */
+.team {
+  padding-bottom: 84px;
+}
+
 /* Title-preview */
 .team__preview {
   margin: 0 auto;
@@ -261,15 +276,18 @@ img {
 }
 
 
-
-
-
-
 /* Style block team-caard !!!!!!*/
-.team-card {
-  width: 380px;
+.team-gallery {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 90px;
 }
 
+.team-card {
+  flex-basis: 384px;
+  /* width: 380px; */
+  text-align: center;
+}
 
 .modal-card {
   position: relative;
@@ -280,8 +298,7 @@ img {
 
 }
 
-
-/* Style Icon */
+/* Style Icon block & svg */
 .icon-block {
   position: relative;
   width: 380px;
@@ -290,8 +307,6 @@ img {
   display: flex;
   opacity: 0;
   transition: all 1s;
-  /* width: 225px; */
-  /* top: 210px; */
   margin: 0 auto;
   z-index: 0;
 }
@@ -311,17 +326,16 @@ img {
   width: 55px;
   height: 55px;
   background-color: rgba(252, 227, 138, 1);
-  /* z-index: 1; */
+  transition: all 1s;
 }
-
 .icon__element svg {
   position: absolute;
   width: 26px;
   height: 26px;
   display: inline-block;
   fill: #f38181;
+  transition: all 1s;
 }
-
 
 /* Style img-team */
 .team-layout {
@@ -334,8 +348,7 @@ img {
   display: block;
   position: absolute;
 }
-
-
+/* Делаем сдвиг карточки */
 .team-layout:hover{
   transform: translate(-10px, -10px);
 }
@@ -344,4 +357,90 @@ img {
 .team-layout:hover .icon-block {
   z-index: 3;
   opacity: 1;
+}
+
+.icon__element:hover {
+  background-color: rgb(243, 129, 129, 1);
+}
+
+/* При наведение меняет цвет icon */
+.icon__element:hover svg {
+  fill: #ffffff;
+}
+
+/* Style text team card */
+.card__title {
+  font-family: "Montserrat-Bold";
+  font-size: 14;
+  margin: 30px 0 15px;
+ color: #333333;
+ text-transform: uppercase;
+}
+.card__text {
+  font-family: "Roboto-light";
+  font-size: 15px;
+  color: #b3b3b3;
+}
+
+
+
+/* Style footer!!!!! */
+.footer {
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid #d9d9d9;
+}
+
+.footer-item {
+  display: flex;
+  justify-content: space-between;
+  width: 300px;
+}
+.footer-item__link{
+   text-decoration: none;
+   font-family: "Montserrat-Regular";
+   font-size: 14px;
+   font-weight: 500;
+   color: #333333;
+}
+.footer-item__link:hover {
+  color: #f38181;
+  transition: all 200ms linear;
+}
+
+/* Style button form */
+.form {
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+/* Style search butn */
+.form-search {
+  width: 230px;
+  height: 40px;
+  padding: 10px;
+  font-size: 14px;
+  font-family: 'RobotoItalic';
+  border: 1px solid #d9d9d9;
+}
+/*Задаем серый цвет тексту placeholder="Your Email..."    */
+input[type="search"]::placeholder {
+  color: #d9d9d9;
+  }  
+
+/* Style butn submit */
+.forme-submit {
+  width: 150px;
+  height: 40px;
+  background-color: #95e1d3;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-family: 'Montserrat', sans-serif;
+  border: 1px solid #95e1d3;
+  cursor: pointer;
 }
