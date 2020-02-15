@@ -60,6 +60,9 @@ img {
 /* Style Nav */
 .nav {
   display: flex;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
   justify-content: space-between;
   align-items: center;
   padding: 30px 0;
@@ -67,6 +70,9 @@ img {
 
 .nav-menu {
   display: flex;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
   justify-content: space-between;
   align-items: center;
   width: 625px;
@@ -80,6 +86,9 @@ img {
   text-transform: uppercase;
   padding-bottom: 8px;
   border-bottom: 2px solid rgba(252, 227, 138, 0);
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
   transition: all 0.3s linear;
 }
 
@@ -136,6 +145,9 @@ img {
   background-color: rgb(255, 255, 255, 0);
   cursor: pointer;
   outline: none;
+  -webkit-transition: all 1s;
+  -moz-transition: all 1s;
+    -o-transition: all 1s;
   transition: all 1s;
 }
 
@@ -192,6 +204,9 @@ img {
 /* Style box-tools */
 .sevices-tools {
   display: flex;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
   justify-content: space-between;
   flex-wrap: wrap;
   margin-top: 60px;
@@ -199,6 +214,9 @@ img {
 
 .tools-box {
   display: flex;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
   width: 380px;
 }
 .tools-box:not(:nth-child(n + 4)) {
@@ -279,6 +297,9 @@ img {
 /* Style block team-caard !!!!!!*/
 .team-gallery {
   display: flex;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
   justify-content: space-between;
   margin-top: 90px;
 }
@@ -305,7 +326,13 @@ img {
   height: 470px;
   background-image: linear-gradient(to bottom, rgba(238, 137, 137,0.8), rgba(245, 183, 142, 0.8), rgba(241, 213, 137, 0.8));
   display: flex;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
   opacity: 0;
+  -webkit-transition: all 1s;
+  -moz-transition: all 1s;
+    -o-transition: all 1s;
   transition: all 1s;
   margin: 0 auto;
   z-index: 0;
@@ -314,12 +341,18 @@ img {
 .icon-item {
   width: 225px;
   display: flex;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
  align-items: center;
  justify-content: center;
  margin: 0 auto;
 }
 .icon__element {
- display: flex;
+  display: flex;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
  justify-content: center;
  align-items: center;
   top: 60px;
@@ -334,11 +367,17 @@ img {
   height: 26px;
   display: inline-block;
   fill: #f38181;
+  -webkit-transition: all 1s;
+  -moz-transition: all 1s;
+    -o-transition: all 1s;
   transition: all 1s;
 }
 
 /* Style img-team */
 .team-layout {
+  -webkit-transition: all 1s;
+  -moz-transition: all 1s;
+    -o-transition: all 1s;
   transition: all 1s;
   display: block;
   z-index: 2;
@@ -388,6 +427,9 @@ img {
 .footer {
   height: 60px;
   display: flex;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
   justify-content: space-between;
   align-items: center;
   border-top: 1px solid #d9d9d9;
@@ -395,6 +437,9 @@ img {
 
 .footer-item {
   display: flex;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
   justify-content: space-between;
   width: 300px;
 }
@@ -407,6 +452,9 @@ img {
 }
 .footer-item__link:hover {
   color: #f38181;
+  -webkit-transition: all 200ms linear;
+  -moz-transition: all 200ms linear;
+    -o-transition: all 200ms linear;
   transition: all 200ms linear;
 }
 
@@ -415,6 +463,9 @@ img {
   margin: 0;
   padding: 0;
   display: flex;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
 }
 
 /* Style search butn */
