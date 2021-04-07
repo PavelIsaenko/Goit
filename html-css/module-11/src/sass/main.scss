@@ -2,6 +2,12 @@
  * Все паршалы импортировать в этот файл
  */
 
+@import 'reset.scss';
 @import 'normalize.scss';
 @import 'base.scss';
-@import 'header11';
+@import 'helpers/variables.scss';
+// components
+@import 'components/fonts.scss';
+@import 'components/container.scss';
+@import 'components/header.scss';
+@import 'components/service-block.scss';

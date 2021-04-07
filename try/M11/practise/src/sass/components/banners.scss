@@ -1,0 +1,16 @@
+.banner {
+  @include center-flex($type: 'all');
+  //   Вместо нижних свойств
+  //   display: flex;
+  //   justify-content: center;
+  //   align-items: center;
+  min-height: 600px;
+  margin-bottom: 120px;
+  background: linear-gradient(
+      to right,
+      rgba(255, 0, 0, 0.3),
+      rgba(0, 0, 255, 0.3)
+    ),
+    linear-gradient(to top, rgba(0, 210, 250, 0.3), rgba(145, 140, 170, 0.3)),
+    url('../../images/banner.jpeg') no-repeat center/cover;
+}

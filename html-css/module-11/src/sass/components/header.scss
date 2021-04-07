@@ -1,0 +1,102 @@
+.header {
+  background: url('../../images/background.png') no-repeat center/cover;
+  min-height: 1000px;
+}
+
+.nav {
+  display: flex;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 0;
+
+  &-menu {
+    display: flex;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    justify-content: space-between;
+    align-items: center;
+    width: 625px;
+  }
+}
+
+.menu__link {
+  text-decoration: none;
+  // font-family: $Montserrat-Regular-font;
+  font-size: 14px;
+  color: $primary-white-color;
+  text-transform: uppercase;
+  padding-bottom: 8px;
+  border-bottom: 2px solid rgba(252, 227, 138, 0);
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+
+.menu__link:hover,
+.menu__link:focus {
+  color: #fce38a;
+  border-bottom: 2px solid rgba(252, 227, 138, 1);
+}
+
+.menu__icon svg {
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+  fill: $primary-white-color;
+  transition: all 0.3s linear;
+}
+
+.menu__icon:hover svg,
+.menu__icon:hover svg {
+  fill: #fce38a;
+  border: none;
+}
+
+.header-adv {
+  margin-top: 150px;
+  text-align: center;
+}
+
+.adv__titleup {
+  font-family: 'Kaushanscript';
+  font-size: 72px;
+  color: #ffffff;
+  margin-bottom: 60px;
+}
+
+.adv__titlesub {
+  // font-family: $Montserrat-Bold-font;
+  font-size: 150px;
+  color: #ffffff;
+  line-height: 140px;
+  text-transform: uppercase;
+}
+
+.adv-btn {
+  margin-top: 120px;
+  width: 150px;
+  height: 35px;
+  // font-family: $Montserrat-Bold-font;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #ffffff;
+  border: 2px solid #ffffff;
+  background-color: rgba(255, 255, 255, 0);
+  cursor: pointer;
+  outline: none;
+  -webkit-transition: all 1s;
+  -moz-transition: all 1s;
+  -o-transition: all 1s;
+  transition: all 1s;
+}
+
+.adv-btn:hover,
+.adv-btn:focus {
+  color: $primary-red-color;
+  background-color: rgba(226, 207, 207, 0.8);
+}

@@ -1,0 +1,39 @@
+.team-list-social {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 14px;
+}
+
+.team-list-social li {
+  margin-right: 4px;
+}
+.team-list-social li:last-child {
+  margin-right: 0;
+}
+
+/* Задаем параметры иконкам сылкам соц сетей */
+.team-list-social a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border: 1px solid rgb(232, 236, 238);
+  transition: fill 1s linear;
+}
+
+.team-list-social a:hover svg {
+  fill: #e84545;
+}
+
+.team-list-social svg {
+  /* Для того, что бы сама иконка меняла цвет */
+  transition: fill 1s linear;
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+  /* Задаем цвет иконке-спрайт */
+  fill: #c6cacc;
+}

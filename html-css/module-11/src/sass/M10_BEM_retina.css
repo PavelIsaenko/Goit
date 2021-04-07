@@ -1,0 +1,224 @@
+/* Style Blcok Services */
+/* Style title  Services*/
+
+/* Style block TEAM!!!!!!!!!! */
+.team {
+  padding-bottom: 84px;
+}
+
+/* Title-preview */
+.team__preview {
+  margin: 0 auto;
+  margin-top: 40px;
+  text-align: center;
+
+  width: 960px;
+  font-family: 'Roboto-Regular';
+  font-size: 15px;
+  line-height: 24px;
+  color: #9f9f9f;
+}
+
+/* Style block team-caard !!!!!!*/
+.team-gallery {
+  display: flex;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  justify-content: space-between;
+  margin-top: 90px;
+}
+
+.team-card {
+  flex-basis: 384px;
+  /* width: 380px; */
+  text-align: center;
+}
+
+.modal-card {
+  position: relative;
+  width: 380px;
+  height: 470px;
+  /* Задаем задний фон img, что бы при сдвиге картинки был синий фон */
+  background-color: #95e1d3;
+}
+
+/* Style Icon block & svg */
+.icon-block {
+  position: relative;
+  width: 380px;
+  height: 470px;
+  background-image: linear-gradient(
+    to bottom,
+    rgba(238, 137, 137, 0.8),
+    rgba(245, 183, 142, 0.8),
+    rgba(241, 213, 137, 0.8)
+  );
+  display: flex;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  opacity: 0;
+  -webkit-transition: all 1s;
+  -moz-transition: all 1s;
+  -o-transition: all 1s;
+  transition: all 1s;
+  margin: 0 auto;
+  z-index: 0;
+}
+
+.icon-item {
+  width: 225px;
+  display: flex;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+.icon__element {
+  display: flex;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  justify-content: center;
+  align-items: center;
+  top: 60px;
+  width: 55px;
+  height: 55px;
+  background-color: rgba(252, 227, 138, 1);
+  transition: all 1s;
+}
+.icon__element svg {
+  position: absolute;
+  width: 26px;
+  height: 26px;
+  display: inline-block;
+  fill: #f38181;
+  -webkit-transition: all 1s;
+  -moz-transition: all 1s;
+  -o-transition: all 1s;
+  transition: all 1s;
+}
+
+/* Style img-team */
+.team-layout {
+  -webkit-transition: all 1s;
+  -moz-transition: all 1s;
+  -o-transition: all 1s;
+  transition: all 1s;
+  display: block;
+  z-index: 2;
+}
+
+.team-layout__img {
+  display: block;
+  position: absolute;
+}
+/* Делаем сдвиг карточки */
+.team-layout:hover {
+  transform: translate(-10px, -10px);
+}
+
+/* При наведении на картоку img блок становится не прозрачным и меняет свой приоритет на высший уровень  (z-index: 3)*/
+.team-layout:hover .icon-block {
+  z-index: 3;
+  opacity: 1;
+}
+
+.icon__element:hover {
+  background-color: rgb(243, 129, 129, 1);
+}
+
+/* При наведение меняет цвет icon */
+.icon__element:hover svg {
+  fill: #ffffff;
+}
+
+/* Style text team card */
+.card__title {
+  font-family: 'Montserrat-Bold';
+  font-size: 14;
+  margin: 30px 0 15px;
+  color: #333333;
+  text-transform: uppercase;
+}
+.card__text {
+  font-family: 'Roboto-light';
+  font-size: 15px;
+  color: #b3b3b3;
+}
+
+/* Style footer!!!!! */
+.footer {
+  height: 60px;
+  display: flex;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid #d9d9d9;
+}
+
+.footer-item {
+  display: flex;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  justify-content: space-between;
+  width: 300px;
+}
+.footer-item__link {
+  text-decoration: none;
+  font-family: 'Montserrat-Regular';
+  font-size: 14px;
+  font-weight: 500;
+  color: #333333;
+}
+.footer-item__link:hover {
+  color: #f38181;
+  -webkit-transition: all 200ms linear;
+  -moz-transition: all 200ms linear;
+  -o-transition: all 200ms linear;
+  transition: all 200ms linear;
+}
+
+/* Style button form */
+.form {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+}
+
+/* Style search butn */
+.form-search {
+  width: 230px;
+  height: 40px;
+  padding: 10px;
+  font-size: 14px;
+  font-family: 'RobotoItalic';
+  border: 1px solid #d9d9d9;
+}
+/*Задаем серый цвет тексту placeholder="Your Email..."    */
+input[type='search']::placeholder {
+  color: #d9d9d9;
+}
+
+/* Style butn submit */
+.forme-submit {
+  width: 150px;
+  height: 40px;
+  background-color: #95e1d3;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-family: 'Montserrat', sans-serif;
+  border: 1px solid #95e1d3;
+  cursor: pointer;
+}

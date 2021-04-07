@@ -1,0 +1,121 @@
+.services {
+  padding: 50px 0 90px;
+}
+
+.services-title,
+.team-title {
+  text-align: center;
+  width: 320px;
+  margin: 0 auto;
+  padding-bottom: 50px;
+  position: relative;
+}
+
+.title__sub::before {
+  content: '';
+  position: absolute;
+  width: 60px;
+  height: 4px;
+  background-color: #f38181;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  margin-top: 110px;
+}
+
+.title__up {
+  text-align: center;
+  font-family: 'Kaushanscript';
+  font-size: 24px;
+  color: #333333;
+  display: block;
+  margin-bottom: 25px;
+  text-transform: none;
+}
+
+.title__sub {
+  font-family: 'Montserrat-Bold';
+  font-size: 30px;
+  color: #333333;
+  text-transform: uppercase;
+}
+
+/* Style box-tools */
+.sevices-tools {
+  display: flex;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 60px;
+}
+
+.tools-box {
+  display: flex;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  width: 380px;
+}
+
+.tools-box:not(:nth-child(n + 4)) {
+  margin-bottom: 100px;
+}
+
+.box-icon {
+  width: 80px;
+  height: 70px;
+}
+
+.box-icon::before {
+  content: '';
+  display: block;
+  width: 30px;
+  height: 30px;
+  margin: 0 20px;
+}
+
+.box-icon--clock::before {
+  background: url('../../images/icon/services/ALARM.png') no-repeat center;
+}
+
+.box-icon--line::before {
+  background: url('../../images/icon/services/LINE_GRAPH.png') no-repeat center;
+}
+
+.box-icon--comp::before {
+  background: url('../../images/icon/services/COMPUTER.png') no-repeat center;
+}
+
+.box-icon--book::before {
+  background: url('../../images/icon/services/BOOK.png') no-repeat center;
+}
+
+.box-icon--home::before {
+  background: url('../../images/icon/services/HOME.png') no-repeat center;
+}
+
+.box-icon--square::before {
+  background: url('../../images/icon/services/Square.png') no-repeat center;
+}
+
+.box-text {
+  width: 300px;
+}
+
+/* Style text-box */
+.box-text__title {
+  font-family: 'Montserrat-Regular';
+  font-size: 14px;
+  color: #181818;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.box-text__describe {
+  font-family: 'Roboto-Regular';
+  font-size: 15px;
+  color: #999999;
+  line-height: 24px;
+}
